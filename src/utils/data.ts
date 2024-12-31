@@ -97,4 +97,26 @@ export const data = {
         "Why money's in that office, right If she start giving me about it ain't there. ",
     },
   ],
+  accordionData: [
+    {
+      label: "Personal Finance & Business",
+      value:
+        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    },
+    {
+      label: "Business Strategy Managements",
+      value:
+        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    },
+    {
+      label: "Professional Data Analysis",
+      value:
+        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    },
+    {
+      label: "Customer Strategy & Marketing",
+      value:
+        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    },
+  ],
 };

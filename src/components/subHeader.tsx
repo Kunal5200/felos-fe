@@ -1,6 +1,6 @@
 import { COLORS } from "@/utils/colors";
 import { data } from "@/utils/data";
-import { poppins } from "@/utils/fonts";
+import { poppins500 } from "@/utils/fonts";
 
 import { Box, Button, Container, IconButton, Stack } from "@mui/material";
 import React from "react";
@@ -70,7 +70,7 @@ const Subheader = () => {
                       transform: "skew(-30deg)",
                       transformOrigin: "top left",
                     },
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                   }}
                 >
                   Request for Quote

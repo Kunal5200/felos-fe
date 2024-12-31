@@ -1,5 +1,4 @@
 import { COLORS } from "@/utils/colors";
-import { poppins } from "@/utils/fonts";
 import {
   Box,
   Button,
@@ -15,6 +14,7 @@ import React from "react";
 import sign from "@/logo/sign.png";
 import Image from "next/image";
 import { textField } from "@/utils/styles";
+import { poppins600,poppins400, poppins500 } from "@/utils/fonts";
 const About = () => {
   return (
     <div>
@@ -24,7 +24,7 @@ const About = () => {
             <Typography
               sx={{
                 fontSize: 30,
-                fontFamily: poppins.style,
+                fontFamily: poppins400.style,
                 fontWeight: "300 !important",
               }}
             >
@@ -32,7 +32,7 @@ const About = () => {
               <Typography
                 sx={{
                   fontSize: 30,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins600.style,
                   fontWeight: "600 !important",
                   color: COLORS.PRIMARY,
                 }}
@@ -68,7 +68,7 @@ const About = () => {
                   sx={{
                     color: COLORS.BLUE,
                     fontSize: 16,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                     fontWeight: "500 !important",
                   }}
                 >
@@ -77,7 +77,7 @@ const About = () => {
                 <Typography
                   sx={{
                     fontSize: 12,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                     color: COLORS.GREY,
                   }}
                 >
@@ -92,7 +92,7 @@ const About = () => {
               <Typography
                 sx={{
                   fontSize: 14,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins500.style,
                   color: COLORS.GREY,
                 }}
               >
@@ -128,7 +128,7 @@ const About = () => {
                     fontSize: 13,
                     backgroundColor: COLORS.BLUE,
                     color: COLORS.WHITE,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                     width: 150,
                     borderRadius: 4,
                   }}

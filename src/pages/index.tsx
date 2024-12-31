@@ -2,8 +2,8 @@ import About from "@/components/about";
 import HeroSection from "@/components/heroSection";
 import Investment from "@/components/investment";
 import Offer from "@/components/offer";
+import Projects from "@/components/projects";
 import { BannerData } from "@/utils/bannerData";
-import { data } from "@/utils/data";
 import { Box } from "@mui/material";
 import Head from "next/head";
 
@@ -26,6 +26,9 @@ export default function Home() {
         </Box>
         <Box sx={{ pt: 10, pb: 10 }}>
           <Investment />
+        </Box>
+        <Box sx={{ pt: 10, pb: 10 }}>
+          <Projects />
         </Box>
       </Box>
     </>

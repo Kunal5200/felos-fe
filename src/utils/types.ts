@@ -26,3 +26,19 @@ export interface OFFERDATA {
   heading: string;
   description: string;
 }
+
+export interface ACCORDION_DATA {
+  label: string;
+  value: string;
+}
+
+export interface ACCORDIONPROPS {
+  data: ACCORDION_DATA[];
+}
+
+export interface PROJECT_DATA {
+  heading: string;
+  img: string;
+  title: string;
+  content: string;
+}

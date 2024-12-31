@@ -4,8 +4,8 @@ import bg from "@/offer/img-1.jpeg";
 import { COLORS } from "@/utils/colors";
 import Image from "next/image";
 import icon from "@/offer/icons/icon-1.png";
-import { poppins } from "@/utils/fonts";
 import { OFFERDATA } from "@/utils/types";
+import { poppins500, poppins600 } from "@/utils/fonts";
 
 const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
   const [hovered, setHovered] = useState(false);
@@ -53,7 +53,7 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
                 textAlign: "center",
                 fontSize: 16,
                 color: hovered ? COLORS.WHITE : COLORS.BLACK,
-                fontFamily: poppins.style,
+                fontFamily: poppins600.style,
                 fontWeight: "600 !important",
                 transition: "color 0.5s ease-in-out",
                 mt: 2,
@@ -67,7 +67,7 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
                   textAlign: "center",
                   fontSize: 14,
                   color: COLORS.GREY,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins500.style,
                   mt: 2,
                   opacity: hovered ? 0 : 1,
                   transition: "opacity 0.5s ease-in-out",
@@ -81,7 +81,7 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
                 sx={{
                   textAlign: "center",
                   fontSize: 15,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins500.style,
                   color: COLORS.PRIMARY,
                   position: "absolute",
                   bottom: 20,

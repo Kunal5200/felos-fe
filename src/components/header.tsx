@@ -1,6 +1,6 @@
-import logo from "@/logo/logo.svg";
+import logo from "@/logo/logo.png";
 import { COLORS } from "@/utils/colors";
-import { poppins } from "@/utils/fonts";
+import { poppins500 } from "@/utils/fonts";
 import { LocationOnOutlined, PhoneAndroidOutlined } from "@mui/icons-material";
 import {
   Box,
@@ -34,7 +34,7 @@ const Header = () => {
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          <Image src={logo} alt="" width={150} />
+          <Image src={logo} alt="" width={200} />
           <Stack direction={"row"} alignItems={"center"} spacing={2}>
             {contactList.map((val, i) => (
               <List key={i}>
@@ -47,7 +47,7 @@ const Header = () => {
                       <Typography
                         sx={{
                           fontSize: 14,
-                          fontFamily: poppins.style,
+                          fontFamily: poppins500.style,
                           color: COLORS.GREY,
                           fontWeight: "300 !important",
                         }}
@@ -59,8 +59,7 @@ const Header = () => {
                       <Typography
                         sx={{
                           fontSize: 14,
-                          fontFamily: poppins.style,
-                          fontWeight: "500 !important",
+                          fontFamily: poppins500.style,
                         }}
                       >
                         {val.value}

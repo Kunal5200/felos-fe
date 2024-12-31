@@ -1,6 +1,6 @@
 import { COLORS } from "@/utils/colors";
 import { data } from "@/utils/data";
-import { poppins } from "@/utils/fonts";
+import { poppins500 } from "@/utils/fonts";
 import { LocalMallOutlined, SearchOutlined } from "@mui/icons-material";
 import { Badge, Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
@@ -20,9 +20,8 @@ const UnderHeader = () => {
                 <Typography
                   sx={{
                     fontSize: 14,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                     color: COLORS.WHITE,
-                    fontWeight: "500 !important",
                     textTransform: "uppercase",
                     cursor: "pointer",
                   }}

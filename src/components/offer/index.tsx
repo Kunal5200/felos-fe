@@ -2,10 +2,10 @@ import React from "react";
 import banner from "@/banner/offer.jpg";
 import { Box, Container, Grid2, Typography } from "@mui/material";
 import { COLORS } from "@/utils/colors";
-import { poppins } from "@/utils/fonts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import OfferCard from "./offerCard";
 import { data } from "@/utils/data";
+import { poppins500,poppins600 } from "@/utils/fonts";
 const Offer = () => {
   return (
     <div>
@@ -28,7 +28,7 @@ const Offer = () => {
                 sx={{
                   color: COLORS.WHITE,
                   fontSize: 20,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins500.style,
                 }}
               >
                 <Typography
@@ -36,7 +36,7 @@ const Offer = () => {
                   sx={{
                     color: COLORS.WHITE,
                     fontSize: 20,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins500.style,
                     borderBottom: `2px solid ${COLORS.PRIMARY}`,
                   }}
                 >
@@ -48,7 +48,7 @@ const Offer = () => {
                 sx={{
                   color: COLORS.WHITE,
                   fontSize: 30,
-                  fontFamily: poppins.style,
+                  fontFamily: poppins500.style,
                   mt: 2,
                 }}
               >
@@ -58,7 +58,7 @@ const Offer = () => {
                   sx={{
                     color: COLORS.PRIMARY,
                     fontSize: 30,
-                    fontFamily: poppins.style,
+                    fontFamily: poppins600.style,
                   }}
                 >
                   Financial Advisors

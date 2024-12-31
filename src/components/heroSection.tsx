@@ -1,5 +1,5 @@
 import { COLORS } from "@/utils/colors";
-import { boldPoppins, poppins } from "@/utils/fonts";
+import { poppins500, poppins800 } from "@/utils/fonts";
 import { BANNERPROPS } from "@/utils/types";
 import {
   Box,
@@ -9,9 +9,11 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import localFont from "next/font/local";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 const HeroSection = ({ data }: BANNERPROPS) => {
   return (
     <div>
@@ -48,7 +50,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                         color: COLORS.WHITE,
                         fontSize: 18,
                         letterSpacing: 4,
-                        fontFamily: poppins.style,
+                        fontFamily: "poppins",
                         textTransform: "uppercase",
                       }}
                     >
@@ -57,7 +59,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     <Typography
                       sx={{
                         fontSize: 110,
-                        fontFamily: boldPoppins.style,
+                        fontFamily: poppins800.style,
                         color: COLORS.PRIMARY,
                         textTransform: "capitalize",
                       }}
@@ -67,7 +69,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     <Typography
                       sx={{
                         fontSize: 16,
-                        fontFmaily: poppins.style,
+                        fontFmaily: poppins500.style,
                         color: COLORS.WHITE,
                         fontWeight: "600 !important",
                       }}
@@ -85,7 +87,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                           backgroundColor: COLORS.BLUE,
                           color: COLORS.WHITE,
                           fontSize: 12,
-                          fontFamily: poppins.style,
+                          fontFamily: poppins500.style,
                           width: 180,
                           borderRadius: 8,
                           fontWeight: "550 !important",
@@ -99,7 +101,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                           backgroundColor: COLORS.TRANSPARENT,
                           color: COLORS.WHITE,
                           fontSize: 12,
-                          fontFamily: poppins.style,
+                          fontFamily: poppins500.style,
                           width: 180,
                           borderRadius: 8,
                           fontWeight: "550 !important",
