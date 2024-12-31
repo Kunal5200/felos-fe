@@ -5,6 +5,7 @@ import { COLORS } from "@/utils/colors";
 import { poppins } from "@/utils/fonts";
 import { Swiper, SwiperSlide } from "swiper/react";
 import OfferCard from "./offerCard";
+import { data } from "@/utils/data";
 const Offer = () => {
   return (
     <div>
@@ -68,12 +69,19 @@ const Offer = () => {
           </Grid2>
         </Container>
       </Box>
-      <Box sx={{backgroundColor:COLORS.LIGHTGREY}}>
-        <Container>
-          <Swiper slidesPerView={6}>
-            <SwiperSlide>
-              <OfferCard />
-            </SwiperSlide>
+      <Box sx={{ backgroundColor: COLORS.LIGHTGREY, px: 2, pb: 2, pt: 2 }}>
+        <Container maxWidth="xl">
+          <Swiper slidesPerView={6} spaceBetween={20}>
+            {data.offerData.map((val, i) => (
+              <SwiperSlide key={i}>
+                <OfferCard
+                  img={val.img}
+                  heading={val.heading}
+                  icon={val.icon}
+                  description={val.description}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Container>
       </Box>

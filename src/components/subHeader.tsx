@@ -39,7 +39,7 @@ const Subheader = () => {
             </Stack>
             <Stack direction={"row"} alignItems={"center"} spacing={1.5}>
               <Box
-                sx={{ backgroundColor: COLORS.PRIMARY, width: 30, height: 40 }}
+                sx={{ backgroundColor: COLORS.PRIMARY, width: 30, height: 30 }}
               ></Box>
               <Box
                 sx={{
@@ -52,7 +52,7 @@ const Subheader = () => {
                     position: "relative",
                     backgroundColor: COLORS.PRIMARY,
                     width: 300,
-                    height: 40,
+                    height: 30,
                     borderRadius: 0,
                     fontSize: 12,
                     color: COLORS.WHITE,

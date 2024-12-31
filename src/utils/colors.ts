@@ -5,6 +5,7 @@ export enum COLORS {
   GREY = "#8F8F8F",
   BLUE = "#0A2C4E",
   TRANSPARENT = "transparent",
-  DARK_OVERLAY = "#00000080",
+  DARK_OVERLAY = "#00000090",
   LIGHTGREY = "#f8f8f8",
+  BLACK = "#000000",
 }

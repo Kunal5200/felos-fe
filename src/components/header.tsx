@@ -27,7 +27,7 @@ const Header = () => {
     },
   ];
   return (
-    <Box sx={{ p: 2 }}>
+    <Box sx={{ p: 1 }}>
       <Container maxWidth="lg">
         <Stack
           direction={"row"}

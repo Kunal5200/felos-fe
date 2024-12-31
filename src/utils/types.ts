@@ -19,3 +19,10 @@ export interface BANNERDATA {
 export interface BANNERPROPS {
   data: BANNERDATA[];
 }
+
+export interface OFFERDATA {
+  img: StaticImageData | string;
+  icon: StaticImageData;
+  heading: string;
+  description: string;
+}
