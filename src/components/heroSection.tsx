@@ -30,7 +30,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
             <Box
               sx={{
                 backgroundImage: `url(${val.img})`,
-                height: "100vh",
+                height: { lg: "100vh", xs: "80vh" },
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -48,7 +48,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     <Typography
                       sx={{
                         color: COLORS.WHITE,
-                        fontSize: 18,
+                        fontSize: { lg: 18, xs: 14 },
                         letterSpacing: 4,
                         fontFamily: "poppins",
                         textTransform: "uppercase",
@@ -58,7 +58,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: 110,
+                        fontSize: { lg: 110, xs: 30 },
                         fontFamily: poppins800.style,
                         color: COLORS.PRIMARY,
                         textTransform: "capitalize",
@@ -68,7 +68,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: 16,
+                        fontSize: { lg: 16, xs: 12 },
                         fontFmaily: poppins500.style,
                         color: COLORS.WHITE,
                         fontWeight: "600 !important",
@@ -77,8 +77,8 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                       {val.description}
                     </Typography>
                     <Stack
-                      direction={"row"}
-                      alignItems={"center"}
+                      direction={{ lg: "row", xs: "column" }}
+                      alignItems={{ lg: "center", xs: "flex-start" }}
                       spacing={2}
                       sx={{ mt: 2 }}
                     >

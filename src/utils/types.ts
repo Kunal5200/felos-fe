@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+import { ElementType, ReactNode } from "react";
 
 export interface SOCIALARRAY {
   icon: ReactNode;
@@ -41,4 +41,35 @@ export interface PROJECT_DATA {
   img: string;
   title: string;
   content: string;
+}
+
+export interface TESTIMONIAL_DATA {
+  img: StaticImageData;
+  name: string;
+  designation: string;
+  content: string;
+}
+
+export interface SERVICESCARD {
+  img: StaticImageData;
+  title: string;
+  content: string;
+}
+
+export interface BANNER_PROPS {
+  img: string;
+  heading: string;
+}
+
+export interface CONTACTDATA {
+  img: string;
+  location: string;
+  officeType: string;
+  data: CONTACTPROPS[];
+  height: number | string;
+}
+
+export interface CONTACTPROPS {
+  icon: ElementType | string;
+  contact: string;
 }

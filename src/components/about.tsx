@@ -14,13 +14,13 @@ import React from "react";
 import sign from "@/logo/sign.png";
 import Image from "next/image";
 import { textField } from "@/utils/styles";
-import { poppins600,poppins400, poppins500 } from "@/utils/fonts";
+import { poppins600, poppins400, poppins500 } from "@/utils/fonts";
 const About = () => {
   return (
     <div>
       <Container maxWidth="lg">
         <Grid2 container>
-          <Grid2 size={6} sx={{ pt: 10 }}>
+          <Grid2 size={{ lg: 6, xs: 12 }} sx={{ pt: 10 }}>
             <Typography
               sx={{
                 fontSize: 30,
@@ -58,8 +58,8 @@ const About = () => {
             </Typography>
 
             <Stack
-              direction={"row"}
-              alignItems={"center"}
+              direction={{ lg: "row", xs: "column" }}
+              alignItems={{ lg: "center", xs: "flex-start" }}
               justifyContent={"space-between"}
               mt={5}
             >

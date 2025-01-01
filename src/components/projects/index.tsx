@@ -19,9 +19,11 @@ const Projects = () => {
       >
         <Container>
           <Stack
-            direction={"row"}
-            alignItems={"center"}
+            direction={{ lg: "row", xs: "column" }}
+            alignItems={{ lg: "center", xs: "flex-start" }}
             justifyContent={"space-between"}
+            mt={{ lg: 0, xs: 2 }}
+            mb={{ lg: 0, xs: 4 }}
           >
             <Box>
               <Typography
@@ -37,12 +39,17 @@ const Projects = () => {
                 Projects
               </Typography>
               <Typography
-                sx={{ mt: 3, fontSize: 32, fontFamily: poppins500.style }}
+                sx={{
+                  mt: 3,
+                  fontSize: { lg: 32, xs: 25 },
+                  fontFamily: poppins500.style,
+                  width: { lg: 500, xs: "100%" },
+                }}
               >
                 Different Types of Success in Our{" "}
                 <Typography
                   sx={{
-                    fontSize: 32,
+                    fontSize: { lg: 32, xs: 25 },
                     color: COLORS.PRIMARY,
                     fontWeight: 600,
                     fontFamily: poppins600.style,
@@ -113,7 +120,22 @@ const Projects = () => {
             </Stack>
           </Stack>
           <Box sx={{ mt: 4 }}>
-            <Swiper spaceBetween={20} slidesPerView={4}>
+            <Swiper
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+              }}
+            >
               {PROJECTDATA.map((val, i) => (
                 <SwiperSlide key={i}>
                   <ProjectCard

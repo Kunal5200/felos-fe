@@ -3,9 +3,15 @@ import { data } from "@/utils/data";
 import { poppins500 } from "@/utils/fonts";
 import { LocalMallOutlined, SearchOutlined } from "@mui/icons-material";
 import { Badge, Box, Container, Stack, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import React from "react";
 
 const UnderHeader = () => {
+  const router = useRouter();
+
+  const changePath = (path: string) => {
+    router.push(path);
+  };
   return (
     <div>
       <Box sx={{ backgroundColor: COLORS.BLUE, p: 2 }}>
@@ -26,6 +32,7 @@ const UnderHeader = () => {
                     cursor: "pointer",
                   }}
                   key={i}
+                  onClick={() => changePath(val.url)}
                 >
                   {val.label}
                 </Typography>

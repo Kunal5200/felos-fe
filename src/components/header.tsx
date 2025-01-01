@@ -13,6 +13,8 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 const Header = () => {
   const contactList = [
     {
@@ -26,6 +28,7 @@ const Header = () => {
       value: "+2-0100 843 1112",
     },
   ];
+
   return (
     <Box sx={{ p: 1 }}>
       <Container maxWidth="lg">
@@ -34,7 +37,9 @@ const Header = () => {
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          <Image src={logo} alt="" width={200} />
+          <Link href={"/"}>
+            <Image src={logo} alt="" width={200} />
+          </Link>
           <Stack direction={"row"} alignItems={"center"} spacing={2}>
             {contactList.map((val, i) => (
               <List key={i}>

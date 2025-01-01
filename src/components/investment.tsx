@@ -11,7 +11,7 @@ const Investment = () => {
     <div>
       <Container>
         <Grid2 container spacing={7}>
-          <Grid2 size={6}>
+          <Grid2 size={{ lg: 6, xs: 12 }}>
             <Typography sx={{ fontSize: 32, fontFamily: poppins500.style }}>
               An{" "}
               <Typography
@@ -42,7 +42,7 @@ const Investment = () => {
               <Collapsable data={data.accordionData} />
             </Box>
           </Grid2>
-          <Grid2 size={6}>
+          <Grid2 size={{ lg: 6, xs: 12 }}>
             <Box sx={{ position: "relative" }}>
               <Image src={videoBanner} alt="" className="img-fluid" />
               <Box sx={{ position: "absolute", top: 30, left: 30 }}>

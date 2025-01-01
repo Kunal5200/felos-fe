@@ -5,14 +5,14 @@ import { COLORS } from "@/utils/colors";
 import { Swiper, SwiperSlide } from "swiper/react";
 import OfferCard from "./offerCard";
 import { data } from "@/utils/data";
-import { poppins500,poppins600 } from "@/utils/fonts";
+import { poppins500, poppins600 } from "@/utils/fonts";
 const Offer = () => {
   return (
     <div>
       <Box
         sx={{
           backgroundImage: `url(${banner.src})`,
-          height: 300,
+          height: { lg: 300, xs: 200 },
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -23,7 +23,7 @@ const Offer = () => {
       >
         <Container>
           <Grid2 container>
-            <Grid2 size={4}>
+            <Grid2 size={{ lg: 4, xs: 12 }}>
               <Typography
                 sx={{
                   color: COLORS.WHITE,
@@ -71,7 +71,22 @@ const Offer = () => {
       </Box>
       <Box sx={{ backgroundColor: COLORS.LIGHTGREY, px: 2, pb: 2, pt: 2 }}>
         <Container maxWidth="xl">
-          <Swiper slidesPerView={6} spaceBetween={20}>
+          <Swiper
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+              },
+            }}
+          >
             {data.offerData.map((val, i) => (
               <SwiperSlide key={i}>
                 <OfferCard
