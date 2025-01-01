@@ -30,7 +30,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
             <Box
               sx={{
                 backgroundImage: `url(${val.img})`,
-                height: { lg: "100vh", xs: "80vh" },
+                height: { lg: "100vh", xs: "50vh" },
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
