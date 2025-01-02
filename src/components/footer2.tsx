@@ -43,7 +43,7 @@ const Footer2 = () => {
       <Box
         sx={{
           backgroundImage: `url(${footerBanner.src})`,
-          height: { lg: "70vh", xs: "100%" },
+          height: { lg: "70vh", xs: "150vh" },
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
