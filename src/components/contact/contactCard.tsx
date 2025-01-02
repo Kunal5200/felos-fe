@@ -29,12 +29,13 @@ const ContactCard = ({
           backgroundPosition: "center",
           backroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          width:"100%"
         }}
       >
         <Box
           sx={{
             background:
-              "linear-gradient(0deg,#0a2c4e 0%,rgba(255,255,255,0) 100%)",
+              "linear-gradient(0deg,#71DD60 0%,rgba(255,255,255,0) 100%)",
             height: "100%",
             display: "flex",
             alignItems: "end",
@@ -54,11 +55,12 @@ const ContactCard = ({
             <Typography
               sx={{
                 mt: 2,
-                fontFamily: poppins300.style,
+                fontFamily: poppins600.style,
                 fontSize: 12,
                 letterSpacing: 4,
                 textTransform: "uppercase",
-                color: COLORS.PRIMARY,
+                color: COLORS.SECONDARY,
+                
               }}
             >
               {officeType}
@@ -68,7 +70,7 @@ const ContactCard = ({
               {data.map((val, i) => (
                 <ListItem sx={{ padding: 1 }} key={i}>
                   <ListItemAvatar sx={{ minWidth: 30 }}>
-                    <val.icon sx={{ color: COLORS.PRIMARY, fontSize: 15 }} />
+                    <val.icon sx={{ color: COLORS.SECONDARY, fontSize: 15 }} />
                   </ListItemAvatar>
                   <ListItemText
                     primary={

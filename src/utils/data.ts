@@ -305,11 +305,11 @@ export const data = {
   londonData: [
     {
       icon: LocationOn,
-      contact: "360 Harvest St, North Subract",
+      contact: "Plot No.77, Sector-37, Gurugram, Haryana-122001",
     },
     {
       icon: Phone,
-      contact: "3695-548555",
+      contact: "+91-965081233",
     },
   ],
 

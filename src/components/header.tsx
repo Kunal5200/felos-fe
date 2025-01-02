@@ -20,12 +20,12 @@ const Header = () => {
     {
       icon: LocationOnOutlined,
       label: "Head Office",
-      value: "325 admiral unit, North cost, USA",
+      value: "Plot No.77, Sector-37, Gurugram, Haryana-122001",
     },
     {
       icon: PhoneAndroidOutlined,
       label: "Call Us",
-      value: "+2-0100 843 1112",
+      value: "+91-965081233",
     },
   ];
 

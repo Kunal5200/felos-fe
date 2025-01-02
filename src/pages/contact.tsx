@@ -23,16 +23,16 @@ const Contact = () => {
 
       <Container sx={{ pt: 10, pb: 10 }}>
         <Grid2 container spacing={5}>
-          <Grid2 size={{ lg: 6, xs: 12 }}>
+          <Grid2 size={{ lg: 12, xs: 12 }}>
             <ContactCard
               img={london.src}
-              location="London, UK"
+              location="Haryana, India"
               officeType="Head Office"
               data={data.londonData}
               height={550}
             />
           </Grid2>
-          <Grid2 size={{ lg: 6, xs: 12 }}>
+          {/* <Grid2 size={{ lg: 6, xs: 12 }}>
             <Grid2 container spacing={5}>
               <Grid2 size={6}>
                 <ContactCard
@@ -71,7 +71,7 @@ const Contact = () => {
                 />
               </Grid2>
             </Grid2>
-          </Grid2>
+          </Grid2> */}
         </Grid2>
       </Container>
       <Container sx={{ mt: 7, pb: 10 }}>
