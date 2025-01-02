@@ -7,6 +7,7 @@ import Partner from "@/components/partner";
 import Projects from "@/components/projects";
 import Testimonials from "@/components/testimonials";
 import { BannerData } from "@/utils/bannerData";
+import { data } from "@/utils/data";
 import { Box } from "@mui/material";
 import Head from "next/head";
 
@@ -22,7 +23,14 @@ export default function Home() {
       <Box>
         <HeroSection data={BannerData} />
         <Box>
-          <About />
+          <About
+            heading1="Welcome to Prefinn"
+            coloredHeading="Your Trusted Finance & Fintech Consultancy"
+            heading2="Partner"
+            description="Prefinn is a consultancy firm specializing in finance and fintech, founded by expert banking professionals with extensive experience in areas such as:"
+            // list={data.list1}
+            description2="Our firm aims to bridge the gap between traditional financial institutions and innovative fintech solutions, thereby enhancing operational efficiency and profitability for its clients."
+          />
         </Box>
         <Box sx={{ pt: 10, pb: 10 }}>
           <Offer />

@@ -5,6 +5,9 @@ import {
   Card,
   Container,
   Grid2,
+  List,
+  ListItem,
+  ListItemText,
   Stack,
   TextareaAutosize,
   TextField,
@@ -15,7 +18,18 @@ import sign from "@/logo/sign.png";
 import Image from "next/image";
 import { textField } from "@/utils/styles";
 import { poppins600, poppins400, poppins500 } from "@/utils/fonts";
-const About = () => {
+import { data } from "@/utils/data";
+import { ABOUTDESCRIPTION } from "@/utils/types";
+const About = ({
+  heading1,
+  coloredHeading,
+  heading2,
+  description,
+  list,
+  description2,
+  listDescription
+}: ABOUTDESCRIPTION) => {
+  // console.log("ttt",list)
   return (
     <div>
       <Container maxWidth="lg">
@@ -28,7 +42,7 @@ const About = () => {
                 fontWeight: "300 !important",
               }}
             >
-              I believe that through knowledge & discipline,{" "}
+              {heading1} ,{" "}
               <Typography
                 sx={{
                   fontSize: 30,
@@ -38,26 +52,64 @@ const About = () => {
                 }}
                 component={"span"}
               >
-                Financial
+                {coloredHeading}
               </Typography>{" "}
-              peace is possible for all of us.
+              {heading2}.
             </Typography>
             <Typography
               sx={{
                 mt: 5,
                 fontSize: 16,
                 color: COLORS.GREY,
-                fontWeight: "500 !important",
+                // fontWeight: "500 !important",
+                fontFamily: poppins400.style,
               }}
             >
-              Your bones don’t break, mine do. That’s clear. Your cells react to
-              engine bacteria and viruses differently than mine. You don’t get
-              sick, I doesnt. That’s also clear. But for some reason, you and I
-              react the exact same way to water. We swallow it too fast, we
-              choke. We get some in ourlevs lungs, we drown.
+              {description}
+            </Typography>
+            <Typography
+              sx={{
+                mt: 5,
+                fontSize: 16,
+                color: COLORS.GREY,
+                // fontWeight: "500 !important",
+                fontFamily: poppins400.style,
+              }}
+            >
+              {listDescription}
+            </Typography>
+            <List>
+              {list?.map((val, i) => (
+                <ListItem disablePadding key={i}>
+                  <ListItemText
+                    primary={
+                      <Typography
+                        sx={{
+                          fontSize: 16,
+                          fontFamily: poppins400.style,
+                          color: COLORS.GREY,
+                        }}
+                      >
+                        {val.label}
+                      </Typography>
+                    }
+                  />
+                </ListItem>
+              ))}
+            </List>
+            <Typography
+              sx={{
+                mt: 3,
+                fontSize: 16,
+                color: COLORS.GREY,
+                // fontWeight: "500 !important",
+                fontFamily: poppins400.style,
+              }}
+            >
+              {description2}
             </Typography>
 
-            <Stack
+            {/* <Stack
               direction={{ lg: "row", xs: "column" }}
               alignItems={{ lg: "center", xs: "flex-start" }}
               justifyContent={"space-between"}
@@ -85,7 +137,7 @@ const About = () => {
                 </Typography>
               </Box>
               <Image src={sign} alt="sign" />
-            </Stack>
+            </Stack> */}
           </Grid2>
           <Grid2 size={6}>
             <Card sx={{ width: 300, margin: "auto", p: 2 }}>

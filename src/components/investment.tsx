@@ -13,7 +13,7 @@ const Investment = () => {
         <Grid2 container spacing={7}>
           <Grid2 size={{ lg: 6, xs: 12 }}>
             <Typography sx={{ fontSize: 32, fontFamily: poppins500.style }}>
-              An{" "}
+              Our{" "}
               <Typography
                 component={"span"}
                 sx={{
@@ -23,11 +23,11 @@ const Investment = () => {
                   fontWeight: "550 !important",
                 }}
               >
-                investment
+                Key Partnerships
               </Typography>{" "}
-              in knowledge pays the best interest.
+              and Services.
             </Typography>
-            <Typography
+            {/* <Typography
               sx={{
                 mt: 2,
                 fontSize: 15,
@@ -37,7 +37,7 @@ const Investment = () => {
             >
               Why money’s in that office, right? If she start giving means about
               it ain’t there, and we got to go placing else and get it.
-            </Typography>
+            </Typography> */}
             <Box sx={{ mt: 7 }}>
               <Collapsable data={data.accordionData} />
             </Box>

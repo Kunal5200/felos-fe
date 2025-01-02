@@ -65,74 +65,98 @@ export const data = {
     {
       img: offerImage1.src,
       icon: icon1,
-      heading: " Turnaround Consulting",
+      heading: "Home Loans",
       description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
+        "Prefinn helps clients assess their home financing needs by partnering with experienced consultants. ",
     },
     {
       img: offerImage2.src,
       icon: icon2,
-      heading: " Bonds & Commodities",
+      heading: "Personal Loans",
       description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
+        "Prefinn offers Personal Loans, including unsecured loans and overdraft facilities. ",
     },
     {
       img: offerImage3.src,
       icon: icon3,
-      heading: "Audit & Issurance",
+      heading: "Business Loans",
       description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
+        "Prefinn offers Business Loan services to help businesses assess their short-term financing needs. ",
     },
     {
       img: offerImage4.src,
       icon: icon4,
-      heading: "Trades & Stocks",
+      heading: "Loan Against Property (LAP)",
       description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
+        "Prefinn’s finance experts are here to help you secure a Loan Against Property (LAP) from top banks. ",
     },
     {
       img: offerImage5.src,
       icon: icon5,
-      heading: "Startegic Planning",
+      heading: "Working Capital Finance Partner",
       description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
+        "Prefinn specializes in helping businesses assess their working capital needs to support growth. ",
     },
-    {
-      img: offerImage6.src,
-      icon: icon6,
-      heading: "Financial Projection",
-      description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
-    },
-    {
-      img: offerImage7.src,
-      icon: icon7,
-      heading: "Turnaround Consulting",
-      description:
-        "Why money's in that office, right If she start giving me about it ain't there. ",
-    },
+    // {
+    //   img: offerImage6.src,
+    //   icon: icon6,
+    //   heading: "Financial Projection",
+    //   description:
+    //     "Why money's in that office, right If she start giving me about it ain't there. ",
+    // },
+    // {
+    //   img: offerImage7.src,
+    //   icon: icon7,
+    //   heading: "Turnaround Consulting",
+    //   description:
+    //     "Why money's in that office, right If she start giving me about it ain't there. ",
+    // },
   ],
   accordionData: [
     {
-      label: "Personal Finance & Business",
+      label: "Fintech Consultancy",
       value:
-        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+        "We collaborate with leading fintech companies to provide expert guidance on:",
+      list: [
+        {
+          label: "Digital Lending Strategies",
+        },
+        {
+          label: "Building New Partnerships",
+        },
+        {
+          label: "Enhancing Financial Inclusion",
+        },
+        {
+          label: "Expanding Distribution Channels",
+        },
+      ],
     },
     {
-      label: "Business Strategy Managements",
+      label: "RBI-Mandated Trainings & Certifications",
       value:
-        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+        "We work with RBI-mandated institutions to align FinTech BCAs (Business Correspondent Agents) and MFI DRAs (Debt Recovery Agents) for:",
+      list: [
+        {
+          label:
+            "Completing IIBF (Indian Institute of Banking & Finance) training and certifications",
+        },
+        {
+          label:
+            "Implementing guided strategies to maximize operational efficiency and profitability",
+        },
+      ],
     },
-    {
-      label: "Professional Data Analysis",
-      value:
-        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
-    },
-    {
-      label: "Customer Strategy & Marketing",
-      value:
-        "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
-    },
+    // {
+    //   label: "Professional Data Analysis",
+    //   value:
+    //     "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    // },
+    // {
+    //   label: "Customer Strategy & Marketing",
+    //   value:
+    //     "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
+    // },
   ],
 
   partner: [
@@ -242,7 +266,7 @@ export const data = {
   aboutServices: [
     {
       img: serviceIcon1,
-      title: "Cash Flow",
+      title: "Prefinn’s Business Correspondent Networks",
       content:
         "Why money's in that office, right If she start giving me about it ain't there someplace or anywhere or nowhere.",
     },
@@ -286,6 +310,35 @@ export const data = {
     {
       icon: Phone,
       contact: "3695-548555",
+    },
+  ],
+
+  list1: [
+    {
+      label: "Banking Sales",
+    },
+    {
+      label: "Digital Lending",
+    },
+    {
+      label: "Fintech Business",
+    },
+    {
+      label: "Project Management",
+    },
+  ],
+  list2: [
+    {
+      label: "Mortgages and Lending",
+    },
+    {
+      label: "Bank Product Sales",
+    },
+    {
+      label: "Fintech Initiatives",
+    },
+    {
+      label: "Financial Inclusion Programs",
     },
   ],
 };

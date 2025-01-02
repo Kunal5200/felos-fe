@@ -25,7 +25,7 @@ const Form = () => {
           letterSpacing: 4,
         }}
       >
-        REQUEST A CALL BACK
+        Contact Us
       </Typography>
       <Box
         sx={{ borderBottom: `2px solid ${COLORS.PRIMARY}`, width: 50, mt: 2 }}
@@ -39,7 +39,7 @@ const Form = () => {
           mt: 3,
         }}
       >
-        Our{" "}
+        Today to explore how we can help{" "}
         <Typography
           sx={{
             fontFamily: poppins600.style,
@@ -48,9 +48,9 @@ const Form = () => {
           }}
           component={"span"}
         >
-          Financial Advisors
+          transform your fintech
         </Typography>{" "}
-        Always Help You
+        journey!
       </Typography>
 
       <Box sx={{ mt: 5 }}>

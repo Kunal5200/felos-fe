@@ -6,6 +6,10 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
   Typography,
 } from "@mui/material";
 import { SyntheticEvent, useState } from "react";
@@ -54,6 +58,36 @@ const Collapsable = ({ data }: ACCORDIONPROPS) => {
             >
               {val.value}
             </Typography>
+            <List>
+              {val.list.map((item, index) => (
+                <ListItem disablePadding>
+                  <ListItemAvatar sx={{ minWidth: 25 }}>
+                    <Typography
+                      sx={{
+                        fontSize: 14,
+                        fontFamily: poppins400.style,
+                        color: COLORS.GREY,
+                      }}
+                    >
+                      {index + 1}.
+                    </Typography>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary={
+                      <Typography
+                        sx={{
+                          fontSize: 14,
+                          fontFamily: poppins400.style,
+                          color: COLORS.GREY,
+                        }}
+                      >
+                        {item.label}
+                      </Typography>
+                    }
+                  />
+                </ListItem>
+              ))}
+            </List>
           </AccordionDetails>
         </Accordion>
       ))}

@@ -9,6 +9,11 @@ export interface HEADERLINKSARRAY {
   label: string;
 }
 
+export interface LIST {
+  label?: string;
+  value?: string;
+}
+
 export interface BANNERDATA {
   subHeading: string;
   img: StaticImageData | string;
@@ -30,6 +35,7 @@ export interface OFFERDATA {
 export interface ACCORDION_DATA {
   label: string;
   value: string;
+  list: LIST[];
 }
 
 export interface ACCORDIONPROPS {
@@ -72,4 +78,14 @@ export interface CONTACTDATA {
 export interface CONTACTPROPS {
   icon: ElementType | string;
   contact: string;
+}
+
+export interface ABOUTDESCRIPTION {
+  heading1: string;
+  coloredHeading: string;
+  heading2: string;
+  description: string;
+  list?: LIST[];
+  description2: string;
+  listDescription?: string;
 }

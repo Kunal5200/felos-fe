@@ -40,9 +40,9 @@ const Offer = () => {
                     borderBottom: `2px solid ${COLORS.PRIMARY}`,
                   }}
                 >
-                  WHAT
+                  KEY
                 </Typography>{" "}
-                WE OFFER FOR YOU
+                SERVICES
               </Typography>
               <Typography
                 sx={{
@@ -61,9 +61,9 @@ const Offer = () => {
                     fontFamily: poppins600.style,
                   }}
                 >
-                  Financial Advisors
+                  Financing
                 </Typography>{" "}
-                Always Help You
+                Management Services
               </Typography>
             </Grid2>
           </Grid2>
@@ -82,7 +82,7 @@ const Offer = () => {
                 spaceBetween: 40,
               },
               1024: {
-                slidesPerView: 6,
+                slidesPerView: 5,
                 spaceBetween: 20,
               },
             }}
