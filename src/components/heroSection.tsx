@@ -30,7 +30,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
             <Box
               sx={{
                 backgroundImage: `url(${val.img})`,
-                height: { lg: "100vh", xs: "50vh" },
+                height: { lg: "100vh", xs: "60vh" },
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -58,7 +58,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: { lg: 110, xs: 30 },
+                        fontSize: { lg: 60, xs: 30 },
                         fontFamily: poppins800.style,
                         color: COLORS.PRIMARY,
                         textTransform: "capitalize",
@@ -109,7 +109,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                           p: 1,
                         }}
                       >
-                        get a quote
+                        Contact Us
                       </Button>
                     </Stack>
                   </Grid2>

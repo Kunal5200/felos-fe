@@ -27,14 +27,14 @@ const About = ({
   description,
   list,
   description2,
-  listDescription
+  listDescription,
 }: ABOUTDESCRIPTION) => {
   // console.log("ttt",list)
   return (
     <div>
       <Container maxWidth="lg">
-        <Grid2 container>
-          <Grid2 size={{ lg: 6, xs: 12 }} sx={{ pt: 10 }}>
+        <Grid2 container spacing={10} alignItems={"center"}>
+          <Grid2 size={{ lg: 6, xs: 12 }}>
             <Typography
               sx={{
                 fontSize: 30,
@@ -54,11 +54,11 @@ const About = ({
               >
                 {coloredHeading}
               </Typography>{" "}
-              {heading2}.
+              {heading2}
             </Typography>
             <Typography
               sx={{
-                mt: 5,
+                mt: 2,
                 fontSize: 16,
                 color: COLORS.GREY,
                 // fontWeight: "500 !important",
@@ -69,7 +69,7 @@ const About = ({
             </Typography>
             <Typography
               sx={{
-                mt: 5,
+                mt: 2,
                 fontSize: 16,
                 color: COLORS.GREY,
                 // fontWeight: "500 !important",
@@ -99,7 +99,7 @@ const About = ({
             </List>
             <Typography
               sx={{
-                mt: 3,
+                mt: 2,
                 fontSize: 16,
                 color: COLORS.GREY,
                 // fontWeight: "500 !important",
@@ -139,8 +139,8 @@ const About = ({
               <Image src={sign} alt="sign" />
             </Stack> */}
           </Grid2>
-          <Grid2 size={6}>
-            <Card sx={{ width: 300, margin: "auto", p: 2 }}>
+          <Grid2 size={{ lg: 6, xs: 11}}>
+            <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
               <Typography
                 sx={{
                   fontSize: 14,

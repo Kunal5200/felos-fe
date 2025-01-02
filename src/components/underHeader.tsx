@@ -1,20 +1,51 @@
 import { COLORS } from "@/utils/colors";
 import { data } from "@/utils/data";
 import { poppins500 } from "@/utils/fonts";
-import { LocalMallOutlined, SearchOutlined } from "@mui/icons-material";
-import { Badge, Box, Container, Stack, Typography } from "@mui/material";
+import { LocalMallOutlined, Person, SearchOutlined } from "@mui/icons-material";
+import {
+  Badge,
+  Box,
+  Container,
+  IconButton,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const UnderHeader = () => {
   const router = useRouter();
-
+  const [isScrolling, setIsScrolling] = useState(false);
   const changePath = (path: string) => {
     router.push(path);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        const currentScroll = window.pageYOffset;
+        // setScrollPosition(currentScroll);
+        setIsScrolling(currentScroll > 0);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
   return (
-    <div>
-      <Box sx={{ backgroundColor: COLORS.BLUE, p: 2 }}>
+    <Box sx={{ position: "relative" }}>
+      <Box
+        sx={{
+          backgroundColor: COLORS.BLUE,
+          p: 2,
+          position: isScrolling ? "fixed" : "absolute",
+          top: 0,
+          zIndex: 999,
+          width: isScrolling ? "100%" : "97.6%",
+          transition: "all 0.5s ease",
+          backdropFilter: isScrolling ? "blur(5px)" : "none",
+        }}
+      >
         <Container>
           <Stack
             direction={"row"}
@@ -39,7 +70,7 @@ const UnderHeader = () => {
               ))}
             </Stack>
             <Stack direction={"row"} alignItems={"center"} spacing={4}>
-              <Badge
+              {/* <Badge
                 badgeContent={1}
                 sx={{
                   "& .MuiBadge-badge": {
@@ -52,13 +83,15 @@ const UnderHeader = () => {
                 }}
               >
                 <LocalMallOutlined sx={{ color: COLORS.WHITE }} />
-              </Badge>
-              <SearchOutlined sx={{ color: COLORS.WHITE }} />
+              </Badge> */}
+              <IconButton>
+                <Person sx={{ color: COLORS.WHITE }} />
+              </IconButton>
             </Stack>
           </Stack>
         </Container>
       </Box>
-    </div>
+    </Box>
   );
 };
 

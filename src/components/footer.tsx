@@ -39,7 +39,7 @@ const Footer = () => {
             alignItems: "center",
             justifyContent: "center",
             px: 3,
-            pt: 3,
+            pt: 0,
           }}
         >
           <Container>
@@ -112,7 +112,9 @@ const Footer = () => {
               ))}
             </Grid2>
             <Divider sx={{ mt: 4, borderColor: "#f8f8f8" }} />
-            <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}></Stack>
+            <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
+
+            </Stack>
           </Container>
         </Box>
       </Box>

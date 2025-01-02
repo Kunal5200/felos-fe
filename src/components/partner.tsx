@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import partner1 from "@/partner/partner-1.jpg";
 import Image from "next/image";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { data } from "@/utils/data";
 const Partner = () => {
   return (
@@ -25,8 +25,22 @@ const Partner = () => {
           }}
         >
           {data.partner.map((val, i) => (
-            <SwiperSlide key={i} style={{textAlign:"center"}}>
-              <Image src={val.img} alt="" />
+            <SwiperSlide
+              key={i}
+              style={{
+                textAlign: "center",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: 200,
+                }}
+              >
+                <Image src={val.img} alt="" width={200} />
+              </Box>
             </SwiperSlide>
           ))}
         </Swiper>

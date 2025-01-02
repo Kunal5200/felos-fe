@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import ContactSection from "@/components/contact";
+import ContinuousSlider from "@/components/continuousSlider";
 import HeroSection from "@/components/heroSection";
 import Investment from "@/components/investment";
 import Offer from "@/components/offer";
@@ -22,13 +23,13 @@ export default function Home() {
       </Head>
       <Box>
         <HeroSection data={BannerData} />
-        <Box>
+        <Box sx={{ pt: 10 }}>
           <About
             heading1="Welcome to Prefinn"
-            coloredHeading="Your Trusted Finance & Fintech Consultancy"
+            coloredHeading="Your Trusted Finance & Fintech Solution Partner"
             heading2="Partner"
-            description="Prefinn is a consultancy firm specializing in finance and fintech, founded by expert banking professionals with extensive experience in areas such as:"
-            // list={data.list1}
+            description="Prefinn is a Fintech Solution Partner firm specializing in finance and fintech, founded by expert banking professionals with extensive experience in areas such as:"
+            list={data.list1}
             description2="Our firm aims to bridge the gap between traditional financial institutions and innovative fintech solutions, thereby enhancing operational efficiency and profitability for its clients."
           />
         </Box>
@@ -40,6 +41,9 @@ export default function Home() {
         </Box>
         <Box sx={{ pt: 10, pb: 10 }}>
           <Projects />
+        </Box>
+        <Box sx={{ pb: 10 }}>
+          <ContinuousSlider />
         </Box>
         <Box sx={{ pb: 10 }}>
           <Testimonials />

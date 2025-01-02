@@ -89,3 +89,9 @@ export interface ABOUTDESCRIPTION {
   description2: string;
   listDescription?: string;
 }
+
+export interface SERVICEDATA {
+  heading: string;
+  description: string;
+  onClick?: () => {};
+}

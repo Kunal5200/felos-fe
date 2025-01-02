@@ -1,22 +1,19 @@
-import { Instagram, LocationOn, Phone, X, YouTube } from "@mui/icons-material";
-import { FaFacebookF } from "react-icons/fa";
 import icon1 from "@/offer/icons/icon-1.png";
 import icon2 from "@/offer/icons/icon-2.png";
 import icon3 from "@/offer/icons/icon-3.png";
 import icon4 from "@/offer/icons/icon-4.png";
 import icon5 from "@/offer/icons/icon-5.png";
-import icon6 from "@/offer/icons/icon-6.png";
-import icon7 from "@/offer/icons/icon-7.png";
 import offerImage1 from "@/offer/img-1.jpeg";
 import offerImage2 from "@/offer/img-2.jpeg";
 import offerImage3 from "@/offer/img-3.jpeg";
 import offerImage4 from "@/offer/img-4.jpeg";
 import offerImage5 from "@/offer/img-5.jpeg";
-import offerImage6 from "@/offer/img-6.jpeg";
-import offerImage7 from "@/offer/img-7.jpeg";
-import partner1 from "@/partner/partner-1.jpg";
-import partner2 from "@/partner/partner-2.jpg";
-import partner3 from "@/partner/partner-3.jpg";
+import partner1 from "@/partner/partner-1.webp";
+import partner2 from "@/partner/partner-2.webp";
+import partner3 from "@/partner/partner-3.webp";
+import partner4 from "@/partner/partner-4.webp";
+import { Instagram, LocationOn, Phone, X, YouTube } from "@mui/icons-material";
+import { FaFacebookF } from "react-icons/fa";
 
 import serviceIcon1 from "@/aboutServices/icon-1.png";
 import serviceIcon2 from "@/aboutServices/icon-2.png";
@@ -24,6 +21,23 @@ import serviceIcon3 from "@/aboutServices/icon-3.png";
 import serviceIcon4 from "@/aboutServices/icon-4.png";
 import serviceIcon5 from "@/aboutServices/icon-5.png";
 import serviceIcon6 from "@/aboutServices/icon-6.png";
+import img1 from "@/lending/img-1.webp";
+import img2 from "@/lending/img-2.webp";
+import img3 from "@/lending/img-3.webp";
+import img4 from "@/lending/img-4.webp";
+import img5 from "@/lending/img-5.webp";
+import img6 from "@/lending/img-6.webp";
+import img7 from "@/lending/img-7.webp";
+import img8 from "@/lending/img-8.webp";
+import img9 from "@/lending/img-9.webp";
+import img10 from "@/lending/img-10.webp";
+import img11 from "@/lending/img-11.webp";
+import img12 from "@/lending/img-12.webp";
+import img13 from "@/lending/img-13.webp";
+import img14 from "@/lending/img-14.webp";
+import img15 from "@/lending/img-15.webp";
+import img16 from "@/lending/img-16.webp";
+import img17 from "@/lending/img-17.webp";
 export const data = {
   socialIcons: [
     {
@@ -45,11 +59,11 @@ export const data = {
       url: "/",
     },
     {
-      label: "Company",
+      label: "About Company",
       url: "/about",
     },
     {
-      label: "cases",
+      label: "Success Stories",
       url: "/case",
     },
     // {
@@ -57,7 +71,11 @@ export const data = {
     //   url: "/news",
     // },
     {
-      label: "Contact",
+      label: "Services",
+      url: "/services",
+    },
+    {
+      label: "Contact Us",
       url: "/contact",
     },
   ],
@@ -114,7 +132,7 @@ export const data = {
   ],
   accordionData: [
     {
-      label: "Fintech Consultancy",
+      label: "Fintech Management",
       value:
         "We collaborate with leading fintech companies to provide expert guidance on:",
       list: [
@@ -122,7 +140,7 @@ export const data = {
           label: "Digital Lending Strategies",
         },
         {
-          label: "Building New Partnerships",
+          label: "Digital Payment Solutions",
         },
         {
           label: "Enhancing Financial Inclusion",
@@ -170,10 +188,7 @@ export const data = {
       img: partner3,
     },
     {
-      img: partner2,
-    },
-    {
-      img: partner1,
+      img: partner4,
     },
   ],
   dataOptions: [
@@ -196,9 +211,6 @@ export const data = {
       heading: "Company",
       list: [
         {
-          label: "Turnaround Consulting",
-        },
-        {
           label: "Testimonials",
         },
         {
@@ -211,56 +223,56 @@ export const data = {
           label: "Careers",
         },
         {
-          label: "Our Advisors",
+          label: "Success Stories",
         },
       ],
     },
-    {
-      heading: "Company",
-      list: [
-        {
-          label: "Turnaround Consulting",
-        },
-        {
-          label: "Testimonials",
-        },
-        {
-          label: "CEO message",
-        },
-        {
-          label: "Partners",
-        },
-        {
-          label: "Careers",
-        },
-        {
-          label: "Our Advisors",
-        },
-      ],
-    },
-    {
-      heading: "Company",
-      list: [
-        {
-          label: "Turnaround Consulting",
-        },
-        {
-          label: "Testimonials",
-        },
-        {
-          label: "CEO message",
-        },
-        {
-          label: "Partners",
-        },
-        {
-          label: "Careers",
-        },
-        {
-          label: "Our Advisors",
-        },
-      ],
-    },
+    // {
+    //   heading: "Company",
+    //   list: [
+    //     {
+    //       label: "Turnaround Consulting",
+    //     },
+    //     {
+    //       label: "Testimonials",
+    //     },
+    //     {
+    //       label: "CEO message",
+    //     },
+    //     {
+    //       label: "Partners",
+    //     },
+    //     {
+    //       label: "Careers",
+    //     },
+    //     {
+    //       label: "Our Advisors",
+    //     },
+    //   ],
+    // },
+    // {
+    //   heading: "Company",
+    //   list: [
+    //     {
+    //       label: "Turnaround Consulting",
+    //     },
+    //     {
+    //       label: "Testimonials",
+    //     },
+    //     {
+    //       label: "CEO message",
+    //     },
+    //     {
+    //       label: "Partners",
+    //     },
+    //     {
+    //       label: "Careers",
+    //     },
+    //     {
+    //       label: "Our Advisors",
+    //     },
+    //   ],
+    // },
   ],
 
   aboutServices: [
@@ -339,6 +351,73 @@ export const data = {
     },
     {
       label: "Financial Inclusion Programs",
+    },
+  ],
+  lendingPartner: [
+    {
+      img: img1,
+    },
+    {
+      img: img2,
+    },
+    {
+      img: img3,
+    },
+    {
+      img: img4,
+    },
+    {
+      img: img5,
+    },
+    {
+      img: img6,
+    },
+    {
+      img: img7,
+    },
+    {
+      img: img8,
+    },
+    {
+      img: img9,
+    },
+    {
+      img: img10,
+    },
+    {
+      img: img11,
+    },
+    {
+      img: img12,
+    },
+    {
+      img: img13,
+    },
+    {
+      img: img14,
+    },
+    {
+      img: img15,
+    },
+    {
+      img: img16,
+    },
+    {
+      img: img17,
+    },
+  ],
+  servicesTabs: [
+    {
+      label: "Fintech Solutions",
+    },
+    {
+      label: "Finance Management Services",
+    },
+    {
+      label: "Fintech Consultancy",
+    },
+    {
+      label: "RBI training & Certifications",
     },
   ],
 };

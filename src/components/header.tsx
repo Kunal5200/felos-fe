@@ -38,9 +38,9 @@ const Header = () => {
           justifyContent={"space-between"}
         >
           <Link href={"/"}>
-            <Image src={logo} alt="" width={200} />
+            <Image src={logo} alt="" width={250} />
           </Link>
-          <Stack direction={"row"} alignItems={"center"} spacing={2}>
+          <Stack direction={"row"} alignItems={"center"} spacing={1}>
             {contactList.map((val, i) => (
               <List key={i}>
                 <ListItem>

@@ -61,7 +61,7 @@ const Offer = () => {
                     fontFamily: poppins600.style,
                   }}
                 >
-                  Financing
+                  Finance
                 </Typography>{" "}
                 Management Services
               </Typography>
