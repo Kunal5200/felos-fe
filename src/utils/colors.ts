@@ -8,4 +8,5 @@ export enum COLORS {
   DARK_OVERLAY = "#00000090",
   LIGHTGREY = "#f8f8f8",
   BLACK = "#000000",
+  DARKPRIMARY = "rgb(24 93 13)",
 }

@@ -17,7 +17,7 @@ const SubFooter = () => {
     <div>
       <Box
         sx={{
-          backgroundImage: `url(${bgFooter.src})`,
+          // backgroundImage: `url(${bgFooter.src})`,
           height: 200,
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -25,6 +25,7 @@ const SubFooter = () => {
           display: "flex",
           alignItems: "Center",
           justifyContent: "Center",
+          backgroundColor: COLORS.BLUE,
         }}
       >
         <Container>
@@ -41,7 +42,7 @@ const SubFooter = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { lg: 30, xs: 20},
+                  fontSize: { lg: 30, xs: 20 },
                   fontFamily: poppins600.style,
                   color: COLORS.WHITE,
                 }}

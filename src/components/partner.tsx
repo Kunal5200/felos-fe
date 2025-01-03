@@ -2,12 +2,22 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import partner1 from "@/partner/partner-1.jpg";
 import Image from "next/image";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { data } from "@/utils/data";
+import { poppins500, poppins600 } from "@/utils/fonts";
 const Partner = () => {
   return (
     <div>
       <Container>
+        <Typography
+          sx={{
+            fontSize: 30,
+            fontFamily: poppins600.style,
+            textAlign: "center",
+          }}
+        >
+          Our Strategic Partners
+        </Typography>
         <Swiper
           breakpoints={{
             640: {

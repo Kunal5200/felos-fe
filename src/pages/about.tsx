@@ -19,6 +19,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
+import founder from "@/banner/founder.webp";
 const Company = () => {
   const list1 = [
     {
@@ -78,6 +79,7 @@ const Company = () => {
           description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
 His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success.
 "
+          img={founder}
         />
       </Box>
       <Container>
@@ -93,7 +95,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                 sx={{
                   fontSize: 14,
                   fontFamily: poppins400.style,
-                  color: COLORS.GREY,
+                  color: COLORS.BLACK,
                   mt: 2,
                 }}
               >
@@ -110,7 +112,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                         sx={{
                           fontSize: 14,
                           fontFamily: poppins400.style,
-                          color: COLORS.GREY,
+                          color: COLORS.BLACK,
                         }}
                       >
                         {val.label}
@@ -123,7 +125,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                 sx={{
                   fontSize: 14,
                   fontFamily: poppins400.style,
-                  color: COLORS.GREY,
+                  color: COLORS.BLACK,
                   mt: 2,
                 }}
               >
@@ -140,7 +142,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                         sx={{
                           fontSize: 14,
                           fontFamily: poppins400.style,
-                          color: COLORS.GREY,
+                          color: COLORS.BLACK,
                         }}
                       >
                         {val.label}
@@ -154,14 +156,14 @@ His strategic vision and solutions empower fintech companies and financial insti
                 sx={{
                   fontSize: 14,
                   fontFamily: poppins400.style,
-                  color: COLORS.GREY,
+                  color: COLORS.BLACK,
                   mt: 2,
                 }}
               >
                 Our goal is to help fintechs achieve their business objectives
                 while driving agent profitability and fostering sustainable
-                channel growth. Let’s Prefinn be your trusted partner in achieving
-                success!
+                channel growth. Let’s Prefinn be your trusted partner in
+                achieving success!
               </Typography>
             </Card>
           </Grid2>
@@ -177,7 +179,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                   sx={{
                     fontSize: 14,
                     fontFamily: poppins400.style,
-                    color: COLORS.GREY,
+                    color: COLORS.BLACK,
                     mt: 2,
                   }}
                 >
@@ -188,14 +190,15 @@ His strategic vision and solutions empower fintech companies and financial insti
           ))}
         </Grid2>
       </Container>
-      <Box sx={{ pt: 10, pb: 10 }}>
-        <Testimonials />
-      </Box>
+
       {/* <Box sx={{ pb: 10 }}>
         <AboutServices />
       </Box> */}
       <Box sx={{ pb: 10 }}>
         <ContinuousSlider />
+      </Box>
+      <Box sx={{ pt: 10, pb: 10 }}>
+        <Testimonials />
       </Box>
       {/* <Box sx={{ pb: 10 }}>
         <VideoSection />

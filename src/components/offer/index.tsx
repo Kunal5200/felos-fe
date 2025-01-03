@@ -24,7 +24,7 @@ const Offer = () => {
         <Container>
           <Grid2 container>
             <Grid2 size={{ lg: 4, xs: 12 }}>
-              <Typography
+              {/* <Typography
                 sx={{
                   color: COLORS.WHITE,
                   fontSize: 20,
@@ -40,10 +40,10 @@ const Offer = () => {
                     borderBottom: `2px solid ${COLORS.PRIMARY}`,
                   }}
                 >
-                  KEY
+                  Loan
                 </Typography>{" "}
-                SERVICES
-              </Typography>
+                Products
+              </Typography> */}
               <Typography
                 sx={{
                   color: COLORS.WHITE,
@@ -61,9 +61,9 @@ const Offer = () => {
                     fontFamily: poppins600.style,
                   }}
                 >
-                  Finance
+                  Loan
                 </Typography>{" "}
-                Management Services
+                Products
               </Typography>
             </Grid2>
           </Grid2>

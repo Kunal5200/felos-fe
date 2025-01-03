@@ -15,4 +15,18 @@ export const TestimonialData: TESTIMONIAL_DATA[] = [
     content:
       "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
   },
+  {
+    img: profile,
+    name: "Fatma Hassan",
+    designation: "Aramex CO-Founder",
+    content:
+      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+  },
+  {
+    img: profile,
+    name: "Fatma Hassan",
+    designation: "Aramex CO-Founder",
+    content:
+      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+  },
 ];

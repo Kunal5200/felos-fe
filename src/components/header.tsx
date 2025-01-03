@@ -1,4 +1,4 @@
-import logo from "@/logo/logo.png";
+import logo from "@/logo/logo-1.jpg";
 import { COLORS } from "@/utils/colors";
 import { poppins500 } from "@/utils/fonts";
 import { LocationOnOutlined, PhoneAndroidOutlined } from "@mui/icons-material";

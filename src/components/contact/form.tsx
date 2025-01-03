@@ -3,15 +3,15 @@ import { data } from "@/utils/data";
 import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
 import { loginTextField } from "@/utils/styles";
 import {
-    Autocomplete,
-    Box,
-    Button,
-    Grid2,
-    TextField,
-    Typography
+  Autocomplete,
+  Box,
+  Button,
+  Grid2,
+  TextField,
+  Typography,
 } from "@mui/material";
 
-const   Form = () => {
+const Form = () => {
   return (
     <div>
       <Typography
@@ -36,7 +36,7 @@ const   Form = () => {
           mt: 3,
         }}
       >
-        Today to explore how we can help{" "}
+        To explore how we can help to{" "}
         <Typography
           sx={{
             fontFamily: poppins600.style,

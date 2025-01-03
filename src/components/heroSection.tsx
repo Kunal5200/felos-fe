@@ -23,7 +23,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
         modules={[EffectFade, Autoplay]}
         effect="fade"
         autoplay={{
-          delay: 4000,
+          delay: 6000,
         }}
       >
         {data.map((val, i) => (
@@ -35,91 +35,98 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
               }}
             >
-              <Container>
-                <Grid2
-                  container
-                  className="animate__animated animate__fadeInDown"
-                >
-                  <Grid2 size={{ lg: 8, xs: 12 }}>
-                    <Typography
-                      sx={{
-                        color: COLORS.WHITE,
-                        fontSize: { lg: 18, xs: 14 },
-                        letterSpacing: 4,
-                        fontFamily: "poppins",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      {val.subHeading}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: { lg: 60, xs: 30 },
-                        fontFamily: poppins800.style,
-                        color: COLORS.PRIMARY,
-                        textTransform: "capitalize",
-                      }}
-                    >
-                      {val.heading}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: { lg: 16, xs: 12 },
-                        fontFmaily: poppins500.style,
-                        color: COLORS.WHITE,
-                        fontWeight: "600 !important",
-                      }}
-                    >
-                      {val.description}
-                    </Typography>
-                    <Stack
-                      direction={{ lg: "row", xs: "column" }}
-                      alignItems={{ lg: "center", xs: "flex-start" }}
-                      spacing={2}
-                      sx={{ mt: 2 }}
-                    >
-                      <Link href="/about-us">
-                        <Button
-                          sx={{
-                            backgroundColor: COLORS.BLUE,
-                            color: COLORS.WHITE,
-                            fontSize: 12,
-                            fontFamily: poppins500.style,
-                            width: 180,
-                            borderRadius: 8,
-                            fontWeight: "550 !important",
-                            p: 1,
-                          }}
-                        >
-                          About Company
-                        </Button>
-                      </Link>
-                      <Link href={"/contact-us"}>
-                        <Button
-                          sx={{
-                            backgroundColor: COLORS.TRANSPARENT,
-                            color: COLORS.WHITE,
-                            fontSize: 12,
-                            fontFamily: poppins500.style,
-                            width: 180,
-                            borderRadius: 8,
-                            fontWeight: "550 !important",
-                            border: `1px solid ${COLORS.WHITE}`,
-                            p: 1,
-                          }}
-                        >
-                          Contact Us
-                        </Button>
-                      </Link>
-                    </Stack>
+              <Box
+                sx={{
+                  backgroundColor: COLORS.DARK_OVERLAY,
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Container>
+                  <Grid2
+                    container
+                    className="animate__animated animate__fadeInDown"
+                  >
+                    <Grid2 size={{ lg: 8, xs: 12 }}>
+                      <Typography
+                        sx={{
+                          color: COLORS.WHITE,
+                          fontSize: { lg: 14, xs: 14 },
+                          letterSpacing: 4,
+                          fontFamily: "poppins",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {val.subHeading}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: { lg: 40, xs: 30 },
+                          fontFamily: poppins800.style,
+                          color: COLORS.PRIMARY,
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        {val.heading}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: { lg: 16, xs: 12 },
+                          fontFmaily: poppins500.style,
+                          color: COLORS.WHITE,
+                          fontWeight: "600 !important",
+                        }}
+                      >
+                        {val.description}
+                      </Typography>
+                      <Stack
+                        direction={{ lg: "row", xs: "column" }}
+                        alignItems={{ lg: "center", xs: "flex-start" }}
+                        spacing={2}
+                        sx={{ mt: 2 }}
+                      >
+                        <Link href="/about">
+                          <Button
+                            sx={{
+                              backgroundColor: COLORS.BLUE,
+                              color: COLORS.WHITE,
+                              fontSize: 12,
+                              fontFamily: poppins500.style,
+                              width: 180,
+                              borderRadius: 8,
+                              fontWeight: "550 !important",
+                              p: 1,
+                            }}
+                          >
+                            About Company
+                          </Button>
+                        </Link>
+                        <Link href={"/contact"}>
+                          <Button
+                            sx={{
+                              backgroundColor: COLORS.TRANSPARENT,
+                              color: COLORS.WHITE,
+                              fontSize: 12,
+                              fontFamily: poppins500.style,
+                              width: 180,
+                              borderRadius: 8,
+                              fontWeight: "550 !important",
+                              border: `1px solid ${COLORS.WHITE}`,
+                              p: 1,
+                            }}
+                          >
+                            Contact Us
+                          </Button>
+                        </Link>
+                      </Stack>
+                    </Grid2>
                   </Grid2>
-                </Grid2>
-              </Container>
+                </Container>
+              </Box>
             </Box>
           </SwiperSlide>
         ))}

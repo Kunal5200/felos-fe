@@ -16,7 +16,7 @@ import {
 import React from "react";
 import footerBanner from "@/banner/footer_banner.jpg";
 import Image from "next/image";
-import logo from "@/logo/logo.png";
+import logo from "@/logo/logo-bg-remover.png";
 import { data } from "@/utils/data";
 import { COLORS } from "@/utils/colors";
 import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
@@ -73,6 +73,16 @@ const Footer2 = () => {
                   Prefinn is a Fintech Solution Partner firm specializing in
                   finance and fintech, founded by expert banking professionals
                   with extensive experience in areas.
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: poppins400.style,
+                    fontSize: 15,
+                    color: COLORS.WHITE,
+                    p: 2,
+                  }}
+                >
+                  A Fintech Initiative of Prism Business Consultants
                 </Typography>
 
                 <Stack direction="row" alignItems={"center"} spacing={1} mt={2}>
@@ -169,7 +179,7 @@ const Footer2 = () => {
                         primary={
                           <Typography
                             sx={{
-                              fontSize: {lg:15,xs:12},
+                              fontSize: { lg: 15, xs: 12 },
                               color: COLORS.WHITE,
                               ml: 4,
                               fontFamily: poppins600.style,

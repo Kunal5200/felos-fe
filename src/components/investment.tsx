@@ -23,9 +23,8 @@ const Investment = () => {
                   fontWeight: "550 !important",
                 }}
               >
-                Key Partnerships
+                Key Services
               </Typography>{" "}
-              and Services.
             </Typography>
             {/* <Typography
               sx={{

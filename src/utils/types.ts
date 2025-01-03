@@ -90,6 +90,7 @@ export interface ABOUTDESCRIPTION {
   list?: LIST[];
   description2: string;
   listDescription?: string;
+  img: StaticImageData;
 }
 
 export interface SERVICEDATA {

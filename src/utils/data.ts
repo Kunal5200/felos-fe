@@ -115,7 +115,7 @@ export const data = {
     {
       img: offerImage5.src,
       icon: icon5,
-      heading: "Working Capital Finance Partner",
+      heading: "Working Capital Loans",
       description:
         "Prefinn specializes in helping businesses assess their working capital needs to support growth. ",
     },
@@ -137,9 +137,9 @@ export const data = {
   accordionData: [
     {
       label: "Finance Management",
+      // value:
+      //   "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
       value:
-        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
-      description:
         "We collaborate with multiple stakeholders across the country to create a robust distribution network of our Loan Products.",
       lisHeading: "Our Distribution Partners:",
       list: [
@@ -195,6 +195,30 @@ export const data = {
         {
           label:
             "Implementing guided strategies to train Corporate BC/DR Agents to maximize Business and operational efficiency.",
+        },
+      ],
+    },
+    {
+      label: "Our Loan Products",
+      // value:
+      //   "We work with RBI-mandated institutions to align FinTech BCAs (Business Correspondent Agents) and MFI DRAs (Debt Recovery Agents) for:",
+      value:
+        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
+      list: [
+        {
+          label: "Home Loans",
+        },
+        {
+          label: "Personal Loans",
+        },
+        {
+          label: "Business Loans",
+        },
+        {
+          label: "Loan Against Property (LAP)",
+        },
+        {
+          label: "Working Capital Loans",
         },
       ],
     },
@@ -430,9 +454,9 @@ export const data = {
     },
   ],
   servicesTabs: [
-    {
-      label: SERVICESTABS.FINTECH_SOLUTIONS,
-    },
+    // {
+    //   label: SERVICESTABS.FINTECH_SOLUTIONS,
+    // },
     {
       label: SERVICESTABS.FINTECH_CONSULTANCY,
     },

@@ -26,7 +26,7 @@ const Projects = () => {
             mb={{ lg: 0, xs: 4 }}
           >
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: 14,
                   fontFamily: poppins600.style,
@@ -37,7 +37,7 @@ const Projects = () => {
                 }}
               >
                 Projects
-              </Typography>
+              </Typography> */}
               <Typography
                 sx={{
                   mt: 3,
@@ -46,7 +46,7 @@ const Projects = () => {
                   width: { lg: 500, xs: "100%" },
                 }}
               >
-                Different Types of Success in Our{" "}
+                Our{" "}
                 <Typography
                   sx={{
                     fontSize: { lg: 32, xs: 25 },
@@ -56,7 +56,7 @@ const Projects = () => {
                   }}
                   component={"span"}
                 >
-                  Case Studies
+                  Success Stories
                 </Typography>
               </Typography>
             </Box>

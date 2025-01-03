@@ -28,8 +28,8 @@ const About = ({
   list,
   description2,
   listDescription,
+  img,
 }: ABOUTDESCRIPTION) => {
-  // console.log("ttt",list)
   return (
     <div>
       <Container maxWidth="lg">
@@ -48,7 +48,7 @@ const About = ({
                   fontSize: 30,
                   fontFamily: poppins600.style,
                   fontWeight: "600 !important",
-                  color: COLORS.PRIMARY,
+                  color: COLORS.DARKPRIMARY,
                 }}
                 component={"span"}
               >
@@ -60,7 +60,7 @@ const About = ({
               sx={{
                 mt: 2,
                 fontSize: 16,
-                color: COLORS.GREY,
+                color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
               }}
@@ -71,7 +71,7 @@ const About = ({
               sx={{
                 mt: 2,
                 fontSize: 16,
-                color: COLORS.GREY,
+                color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
               }}
@@ -87,7 +87,7 @@ const About = ({
                         sx={{
                           fontSize: 16,
                           fontFamily: poppins400.style,
-                          color: COLORS.GREY,
+                          color: COLORS.BLACK,
                         }}
                       >
                         {val.label}
@@ -101,7 +101,7 @@ const About = ({
               sx={{
                 mt: 2,
                 fontSize: 16,
-                color: COLORS.GREY,
+                color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
               }}
@@ -139,8 +139,8 @@ const About = ({
               <Image src={sign} alt="sign" />
             </Stack> */}
           </Grid2>
-          <Grid2 size={{ lg: 6, xs: 11}}>
-            <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
+          <Grid2 size={{ lg: 6, xs: 11 }}>
+            {/* <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
               <Typography
                 sx={{
                   fontSize: 14,
@@ -188,7 +188,8 @@ const About = ({
                   Send Now
                 </Button>
               </Box>
-            </Card>
+            </Card> */}
+            <Image src={img} alt="" width={500} />
           </Grid2>
         </Grid2>
       </Container>

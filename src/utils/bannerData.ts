@@ -1,6 +1,6 @@
 import { BANNERDATA } from "./types";
-import img1 from "@/slider/sliderImage1.jpg";
-import img2 from "@/slider/sliderImage2.jpg";
+import img1 from "@/banner/finance.jpg";
+import img2 from "@/banner/fintech.jpg";
 import img3 from "@/banner/trainings.jpg";
 export const BannerData: BANNERDATA[] = [
   {

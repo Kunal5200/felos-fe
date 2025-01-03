@@ -12,7 +12,7 @@ import { BannerData } from "@/utils/bannerData";
 import { data } from "@/utils/data";
 import { Box } from "@mui/material";
 import Head from "next/head";
-
+import about from "@/banner/about.png";
 export default function Home() {
   return (
     <>
@@ -32,16 +32,17 @@ export default function Home() {
             description="Prefinn is a Fintech Solution firm specializing in Banking finance and fintech management services, founded by expert banking professionals with extensive experience in areas such as:"
             list={data.list1}
             description2="Our firm aims to bridge the gap between traditional financial institutions and innovative fintech solutions, thereby enhancing operational efficiency and profitability for its clients."
+            img={about}
           />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <ChooseUs />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
-          <Offer />
+          <Investment />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
-          <Investment />
+          <Offer />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Projects />
@@ -55,7 +56,7 @@ export default function Home() {
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Partner />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 }, pb: { lg: 10, xs: 5 } }}>
           <ContactSection />
         </Box>
       </Box>

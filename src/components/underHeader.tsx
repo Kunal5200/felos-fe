@@ -38,7 +38,7 @@ const UnderHeader = () => {
         sx={{
           backgroundColor: COLORS.BLUE,
           p: 2,
-          position: isScrolling ? "fixed" : "absolute",
+          position: isScrolling ? "fixed" : "",
           top: 0,
           zIndex: 999,
           width: isScrolling ? "100%" : "97.6%",
