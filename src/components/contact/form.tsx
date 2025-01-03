@@ -11,7 +11,7 @@ import {
     Typography
 } from "@mui/material";
 
-const Form = () => {
+const   Form = () => {
   return (
     <div>
       <Typography
