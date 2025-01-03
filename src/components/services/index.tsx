@@ -52,7 +52,7 @@ const ServicesTab = () => {
             },
             mb: 4,
             "& .MuiTabScrollButton-root": {
-              color: { lg: COLORS.BLACK, xs: COLORS.WHITE },
+              color: { lg: COLORS.BLACK, xs: COLORS.BLACK },
             },
           }}
           variant="scrollable"

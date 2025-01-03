@@ -38,6 +38,10 @@ import img14 from "@/lending/img-14.webp";
 import img15 from "@/lending/img-15.webp";
 import img16 from "@/lending/img-16.webp";
 import img17 from "@/lending/img-17.webp";
+import { SERVICESTABS } from "./enum";
+import leadership from "@/icon/leadership.png";
+import strategy from "@/icon/strategy_approach.png";
+import result from "@/icon/result.png";
 export const data = {
   socialIcons: [
     {
@@ -62,10 +66,10 @@ export const data = {
       label: "About Company",
       url: "/about",
     },
-    {
-      label: "Success Stories",
-      url: "/case",
-    },
+    // {
+    //   label: "Success Stories",
+    //   url: "/case",
+    // },
     // {
     //   label: "News",
     //   url: "/news",
@@ -132,21 +136,50 @@ export const data = {
   ],
   accordionData: [
     {
+      label: "Finance Management",
+      value:
+        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
+      description:
+        "We collaborate with multiple stakeholders across the country to create a robust distribution network of our Loan Products.",
+      lisHeading: "Our Distribution Partners:",
+      list: [
+        {
+          label: "Independent Financial Advisors",
+        },
+        {
+          label: "Insurance Product Advisors",
+        },
+        {
+          label: "Real Estate Consultants",
+        },
+        {
+          label: "Independent Tax Consultants",
+        },
+      ],
+    },
+    {
       label: "Fintech Management",
       value:
         "We collaborate with leading fintech companies to provide expert guidance on:",
+      listHeading: "Fintech Consultancy:",
       list: [
         {
-          label: "Digital Lending Strategies",
+          label: "Digital Lending strategies",
         },
         {
           label: "Digital Payment Solutions",
+        },
+        {
+          label: "Building New Partnerships",
         },
         {
           label: "Enhancing Financial Inclusion",
         },
         {
           label: "Expanding Distribution Channels",
+        },
+        {
+          label: "VLE Training and Certifications",
         },
       ],
     },
@@ -161,20 +194,10 @@ export const data = {
         },
         {
           label:
-            "Implementing guided strategies to maximize operational efficiency and profitability",
+            "Implementing guided strategies to train Corporate BC/DR Agents to maximize Business and operational efficiency.",
         },
       ],
     },
-    // {
-    //   label: "Professional Data Analysis",
-    //   value:
-    //     "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
-    // },
-    // {
-    //   label: "Customer Strategy & Marketing",
-    //   value:
-    //     "Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.Why money's in that office, right If she start giving me about it ain't there someplace.",
-    // },
   ],
 
   partner: [
@@ -347,10 +370,10 @@ export const data = {
       label: "Bank Product Sales",
     },
     {
-      label: "Fintech Initiatives",
+      label: "Business Operations",
     },
     {
-      label: "Financial Inclusion Programs",
+      label: "Fintech Business Development",
     },
   ],
   lendingPartner: [
@@ -408,16 +431,36 @@ export const data = {
   ],
   servicesTabs: [
     {
-      label: "Fintech Solutions",
+      label: SERVICESTABS.FINTECH_SOLUTIONS,
     },
     {
-      label: "Finance Management Services",
+      label: SERVICESTABS.FINTECH_CONSULTANCY,
     },
     {
-      label: "Fintech Consultancy",
+      label: SERVICESTABS.FINANCE_MANAGEMENT_SERVICES,
     },
     {
-      label: "RBI training & Certifications",
+      label: SERVICESTABS.RBI_TRAINING_CERTIFICATIONS,
+    },
+  ],
+
+  chooseData: [
+    {
+      img: leadership,
+      heading: "Experienced Leadership",
+      content:
+        "A team of Banking and Fintech Professionals with proven Industry experience.",
+    },
+    {
+      img: strategy,
+      heading: "Strategic Approach",
+      content: "Customized strategies to align with your business objectives.",
+    },
+    {
+      img: result,
+      heading: "Quick Results",
+      content:
+        "Helping you maximise Distribution business and achieve profitability.",
     },
   ],
 };

@@ -25,7 +25,7 @@ const Header = () => {
     {
       icon: PhoneAndroidOutlined,
       label: "Call Us",
-      value: "+91-965081233",
+      value: "+91-9650812333",
     },
   ];
 

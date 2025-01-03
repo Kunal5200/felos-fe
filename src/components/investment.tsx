@@ -40,6 +40,17 @@ const Investment = () => {
             </Typography> */}
             <Box sx={{ mt: 7 }}>
               <Collapsable data={data.accordionData} />
+
+              <Typography
+                sx={{
+                  fontSize: 16,
+                  fontWeight: 550,
+                  fontFamily: poppins500.style,
+                }}
+              >
+                Let us partner with you to create a sustainable and profitable
+                financial ecosystem.
+              </Typography>
             </Box>
           </Grid2>
           <Grid2 size={{ lg: 6, xs: 12 }}>

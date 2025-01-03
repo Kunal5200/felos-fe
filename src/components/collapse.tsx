@@ -56,7 +56,25 @@ const Collapsable = ({ data }: ACCORDIONPROPS) => {
                 color: COLORS.GREY,
               }}
             >
+              {val.description}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: 14,
+                fontFamily: poppins400.style,
+                color: COLORS.GREY,
+              }}
+            >
               {val.value}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: 18,
+                fontFamily: poppins400.style,
+                color: COLORS.GREY,
+              }}
+            >
+              {val.listHeading}
             </Typography>
             <List>
               {val.list.map((item, index) => (

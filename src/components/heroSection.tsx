@@ -10,6 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import localFont from "next/font/local";
+import Link from "next/link";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -30,7 +31,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
             <Box
               sx={{
                 backgroundImage: `url(${val.img})`,
-                height: { lg: "100vh", xs: "60vh" },
+                height: { lg: "100vh", xs: "70vh" },
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -44,7 +45,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                   container
                   className="animate__animated animate__fadeInDown"
                 >
-                  <Grid2 size={8}>
+                  <Grid2 size={{ lg: 8, xs: 12 }}>
                     <Typography
                       sx={{
                         color: COLORS.WHITE,
@@ -82,35 +83,39 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                       spacing={2}
                       sx={{ mt: 2 }}
                     >
-                      <Button
-                        sx={{
-                          backgroundColor: COLORS.BLUE,
-                          color: COLORS.WHITE,
-                          fontSize: 12,
-                          fontFamily: poppins500.style,
-                          width: 180,
-                          borderRadius: 8,
-                          fontWeight: "550 !important",
-                          p: 1,
-                        }}
-                      >
-                        About Company
-                      </Button>
-                      <Button
-                        sx={{
-                          backgroundColor: COLORS.TRANSPARENT,
-                          color: COLORS.WHITE,
-                          fontSize: 12,
-                          fontFamily: poppins500.style,
-                          width: 180,
-                          borderRadius: 8,
-                          fontWeight: "550 !important",
-                          border: `1px solid ${COLORS.WHITE}`,
-                          p: 1,
-                        }}
-                      >
-                        Contact Us
-                      </Button>
+                      <Link href="/about-us">
+                        <Button
+                          sx={{
+                            backgroundColor: COLORS.BLUE,
+                            color: COLORS.WHITE,
+                            fontSize: 12,
+                            fontFamily: poppins500.style,
+                            width: 180,
+                            borderRadius: 8,
+                            fontWeight: "550 !important",
+                            p: 1,
+                          }}
+                        >
+                          About Company
+                        </Button>
+                      </Link>
+                      <Link href={"/contact-us"}>
+                        <Button
+                          sx={{
+                            backgroundColor: COLORS.TRANSPARENT,
+                            color: COLORS.WHITE,
+                            fontSize: 12,
+                            fontFamily: poppins500.style,
+                            width: 180,
+                            borderRadius: 8,
+                            fontWeight: "550 !important",
+                            border: `1px solid ${COLORS.WHITE}`,
+                            p: 1,
+                          }}
+                        >
+                          Contact Us
+                        </Button>
+                      </Link>
                     </Stack>
                   </Grid2>
                 </Grid2>

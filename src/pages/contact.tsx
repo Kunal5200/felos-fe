@@ -21,7 +21,7 @@ const Contact = () => {
     <div>
       <Banner img={banner.src} heading="Contact Us" />
 
-      <Container sx={{ pt: 10, pb: 10 }}>
+      {/* <Container sx={{ pt: 10, pb: 10 }}>
         <Grid2 container spacing={5}>
           <Grid2 size={{ lg: 12, xs: 12 }}>
             <ContactCard
@@ -32,7 +32,7 @@ const Contact = () => {
               height={550}
             />
           </Grid2>
-          {/* <Grid2 size={{ lg: 6, xs: 12 }}>
+          <Grid2 size={{ lg: 6, xs: 12 }}>
             <Grid2 container spacing={5}>
               <Grid2 size={6}>
                 <ContactCard
@@ -71,9 +71,9 @@ const Contact = () => {
                 />
               </Grid2>
             </Grid2>
-          </Grid2> */}
+          </Grid2>
         </Grid2>
-      </Container>
+      </Container> */}
       <Container sx={{ mt: 7, pb: 10 }}>
         <Grid2 container>
           <Grid2 size={{ lg: 5, xs: 12 }} margin="auto">

@@ -27,7 +27,7 @@ const Footer2 = () => {
   const contact = [
     {
       icon: <Phone />,
-      label: "+91-965081233",
+      label: "+91-9650812333",
     },
     {
       icon: <Email />,
@@ -51,7 +51,7 @@ const Footer2 = () => {
       >
         <Box
           sx={{
-            backgroundColor: "rgba(10, 78, 25, 0.95)",
+            backgroundColor: "rgba(0,0,0,0.70)",
             height: "100%",
             display: "flex",
             alignItems: "center",

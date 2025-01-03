@@ -22,7 +22,7 @@ import {
 const Company = () => {
   const list1 = [
     {
-      label: "Fintech Solutions",
+      label: "Finance Management",
     },
     {
       label: "Digital Lending",
@@ -160,7 +160,7 @@ His strategic vision and solutions empower fintech companies and financial insti
               >
                 Our goal is to help fintechs achieve their business objectives
                 while driving agent profitability and fostering sustainable
-                channel growth. Let Prefinn be your trusted partner in achieving
+                channel growth. Let’s Prefinn be your trusted partner in achieving
                 success!
               </Typography>
             </Card>
@@ -197,9 +197,9 @@ His strategic vision and solutions empower fintech companies and financial insti
       <Box sx={{ pb: 10 }}>
         <ContinuousSlider />
       </Box>
-      <Box sx={{ pb: 10 }}>
+      {/* <Box sx={{ pb: 10 }}>
         <VideoSection />
-      </Box>
+      </Box> */}
       <Box sx={{ pb: 10 }}>
         <Partner />
       </Box>

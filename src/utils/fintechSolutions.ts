@@ -7,8 +7,8 @@ export const fintechSolutions: SERVICEDATA[] = [
       "At Prefinn, we provide project-based solutions tailored for banks and financial institutions. Our approach focuses on building a robust digital infrastructure supported by a skilled team to deliver exceptional customer experiences and efficient digital operations",
   },
   {
-    heading: "Lending Products",
+    heading: "Loan Products",
     description:
-      "Prefinn provides tailored lending solutions for individuals and businesses, ensuring competitive interest rates and personalized service. Our offerings include:",
+      "Prefinn provides tailored Loan products for individuals and businesses, ensuring competitive interest rates and personalized services. Our offerings include:",
   },
 ];

@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import ChooseUs from "@/components/chooseUs";
 import ContactSection from "@/components/contact";
 import ContinuousSlider from "@/components/continuousSlider";
 import HeroSection from "@/components/heroSection";
@@ -23,35 +24,38 @@ export default function Home() {
       </Head>
       <Box>
         <HeroSection data={BannerData} />
-        <Box sx={{ pt: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <About
             heading1="Welcome to Prefinn"
-            coloredHeading="Your Trusted Finance & Fintech Solution Partner"
+            coloredHeading="Your Trusted Finance & Fintech Solution "
             heading2="Partner"
-            description="Prefinn is a Fintech Solution Partner firm specializing in finance and fintech, founded by expert banking professionals with extensive experience in areas such as:"
+            description="Prefinn is a Fintech Solution firm specializing in Banking finance and fintech management services, founded by expert banking professionals with extensive experience in areas such as:"
             list={data.list1}
             description2="Our firm aims to bridge the gap between traditional financial institutions and innovative fintech solutions, thereby enhancing operational efficiency and profitability for its clients."
           />
         </Box>
-        <Box sx={{ pt: 10, pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+          <ChooseUs />
+        </Box>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Offer />
         </Box>
-        <Box sx={{ pt: 10, pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Investment />
         </Box>
-        <Box sx={{ pt: 10, pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Projects />
         </Box>
-        <Box sx={{ pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <ContinuousSlider />
         </Box>
-        <Box sx={{ pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Testimonials />
         </Box>
-        <Box sx={{ pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Partner />
         </Box>
-        <Box sx={{ pb: 10 }}>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <ContactSection />
         </Box>
       </Box>

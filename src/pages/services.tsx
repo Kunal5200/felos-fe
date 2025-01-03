@@ -6,6 +6,7 @@ import ServicesTab from "@/components/services";
 import ContinuousSlider from "@/components/continuousSlider";
 import VideoSection from "@/components/videoSection";
 import Partner from "@/components/partner";
+import Testimonials from "@/components/testimonials";
 const Services = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const Services = () => {
         <ContinuousSlider />
       </Box>
       <Box sx={{ pb: 10 }}>
-        <VideoSection />
+        <Testimonials />
       </Box>
       <Box sx={{ pb: 10 }}>
         <Partner />

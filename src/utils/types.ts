@@ -36,6 +36,8 @@ export interface ACCORDION_DATA {
   label: string;
   value: string;
   list: LIST[];
+  listHeading?: string;
+  description?: string;
 }
 
 export interface ACCORDIONPROPS {
@@ -94,4 +96,10 @@ export interface SERVICEDATA {
   heading: string;
   description: string;
   onClick?: () => {};
+}
+
+export interface CHOOSEPROPS {
+  img: StaticImageData;
+  heading: string;
+  content: string;
 }

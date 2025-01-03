@@ -2,17 +2,14 @@ import { COLORS } from "@/utils/colors";
 import { data } from "@/utils/data";
 import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
 import { loginTextField } from "@/utils/styles";
-import { BorderColor } from "@mui/icons-material";
 import {
-  Autocomplete,
-  Box,
-  Button,
-  Grid2,
-  Stack,
-  TextField,
-  Typography,
+    Autocomplete,
+    Box,
+    Button,
+    Grid2,
+    TextField,
+    Typography
 } from "@mui/material";
-import React from "react";
 
 const Form = () => {
   return (

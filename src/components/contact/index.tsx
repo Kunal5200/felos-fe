@@ -11,15 +11,15 @@ const ContactSection = () => {
       <Box
         sx={{
           backgroundImage: `url(${banner.src})`,
-          height: { lg: "100vh", xs: "150vh" },
+          height: { lg: "100vh", xs: "130vh" },
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          pt: 5,
-          pb: 5,
+          pt: {lg:5,xs:1},
+          pb: {lg:5,xs:2},
         }}
       >
         <Container>
