@@ -19,7 +19,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import founder from "@/banner/founder.webp";
+import founder from "@/partner/founder.jpg";
 const Company = () => {
   const list1 = [
     {
