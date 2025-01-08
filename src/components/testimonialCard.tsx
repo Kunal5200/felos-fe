@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "@/banner/profile.jpg";
-import { Box, Divider, Grid2, Stack, Typography } from "@mui/material";
+import { Avatar, Box, Divider, Grid2, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { COLORS } from "@/utils/colors";
 import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
@@ -34,7 +34,8 @@ const TestimonialCard = ({
       </Typography>
       <Divider />
       <Stack direction={"row"} alignItems={"center"} spacing={2}>
-        <Image src={img} alt="" width={50} style={{ borderRadius: "50%" }} />
+        {/* <Image src={img} alt="" width={50} style={{ borderRadius: "50%" }} /> */}
+        <Avatar></Avatar>
         <Box>
           <Typography
             textAlign={"center"}
