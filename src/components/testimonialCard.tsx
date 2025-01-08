@@ -21,7 +21,7 @@ const TestimonialCard = ({
       }}
     >
       <Typography
-        sx={{
+        sx={{ 
           fontSize: { lg: 21, xs: 12 },
           color: COLORS.BLACK,
           fontFamily: poppins400.style,
@@ -34,7 +34,6 @@ const TestimonialCard = ({
       </Typography>
       <Divider />
       <Stack direction={"row"} alignItems={"center"} spacing={2}>
-        {/* <Image src={img} alt="" width={50} style={{ borderRadius: "50%" }} /> */}
         <Avatar></Avatar>
         <Box>
           <Typography

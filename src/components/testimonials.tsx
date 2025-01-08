@@ -1,6 +1,7 @@
 import testimonialBanner from "@/banner/testimonial_banner.jpg";
 import { TestimonialData } from "@/utils/testimonialData";
 import {
+  Avatar,
   Box,
   Container,
   Divider,
@@ -83,12 +84,13 @@ const Testimonials = () => {
                   </Typography>
                   <Divider sx={{ mt: 2, mb: 2 }} />
                   <Stack direction={"row"} alignItems={"center"} spacing={2}>
-                    <Image
+                    {/* <Image
                       src={val.img}
                       alt=""
                       width={50}
                       style={{ borderRadius: "50%" }}
-                    />
+                    /> */}
+                    <Avatar></Avatar>
                     <Box>
                       <Typography
                         sx={{
