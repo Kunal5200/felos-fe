@@ -43,6 +43,7 @@ const UnderHeader = () => {
   const openPopover = (index: number, e: SyntheticEvent, label: string) => {
     setAnchorEl(e.currentTarget as HTMLElement);
     setActivePopover(index);
+    console.log("inndede", index);
     if (label === "Contact Us") {
       setPopoverData(DetailedData.contactPage);
     }
@@ -86,7 +87,7 @@ const UnderHeader = () => {
             alignItems={"center"}
             justifyContent={"space-between"}
           >
-            <Stack direction={"row"} alignItems={"center"} spacing={4}>
+            <Stack direction={"row"} alignItems={"center"} spacing={4} sx={{mx:3}}>
               {data.headerLinks.map((val, i) =>
                 val.icon ? (
                   <Typography
