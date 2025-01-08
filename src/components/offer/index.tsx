@@ -24,26 +24,6 @@ const Offer = () => {
         <Container>
           <Grid2 container>
             <Grid2 size={{ lg: 4, xs: 12 }}>
-              {/* <Typography
-                sx={{
-                  color: COLORS.WHITE,
-                  fontSize: 20,
-                  fontFamily: poppins500.style,
-                }}
-              >
-                <Typography
-                  component={"span"}
-                  sx={{
-                    color: COLORS.WHITE,
-                    fontSize: 20,
-                    fontFamily: poppins500.style,
-                    borderBottom: `2px solid ${COLORS.PRIMARY}`,
-                  }}
-                >
-                  Loan
-                </Typography>{" "}
-                Products
-              </Typography> */}
               <Typography
                 sx={{
                   color: COLORS.WHITE,
@@ -69,36 +49,34 @@ const Offer = () => {
           </Grid2>
         </Container>
       </Box>
-      <Box sx={{ backgroundColor: COLORS.LIGHTGREY, px: 2, pb: 2, pt: 2 }}>
-        <Container maxWidth="xl">
-          <Swiper
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-              },
-            }}
-          >
-            {data.offerData.map((val, i) => (
-              <SwiperSlide key={i}>
-                <OfferCard
-                  img={val.img}
-                  heading={val.heading}
-                  icon={val.icon}
-                  description={val.description}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Container>
+      <Box sx={{ px: 2, pb: 2, pt: 2 }}>
+        <Swiper
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
+        >
+          {data.offerData.map((val, i) => (
+            <SwiperSlide key={i}>
+              <OfferCard
+                img={val.img}
+                heading={val.heading}
+                icon={val.icon}
+                description={val.description}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Box>
     </div>
   );

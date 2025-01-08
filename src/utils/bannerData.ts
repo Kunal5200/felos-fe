@@ -6,9 +6,9 @@ export const BannerData: BANNERDATA[] = [
   {
     img: img1.src,
     subHeading: "Maximise your savings with",
-    heading: "Finance Management",
+    heading: "Loan Distribution",
     description:
-      "Advantages of selecting right Loan Products & Pricing through 100+ Partner Banks & Financial Institutions through expert professionals",
+      "Advantages of selecting right Loan Products & Pricing through 130+ Partner Banks & Financial Institutions through expert professionals",
   },
   {
     img: img2.src,

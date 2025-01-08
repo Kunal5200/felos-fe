@@ -1,6 +1,10 @@
-import { Close, Menu, Search } from "@mui/icons-material";
+import { Close, ExpandMore, Menu, Search } from "@mui/icons-material";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Box,
+  Collapse,
   Drawer,
   IconButton,
   List,
@@ -11,12 +15,14 @@ import {
   Typography,
 } from "@mui/material";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { SyntheticEvent, useEffect, useState } from "react";
 import logo from "@/logo/logo.png";
 import { data } from "@/utils/data";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { COLORS } from "@/utils/colors";
+import { DataItem } from "@/utils/types";
+import { DetailedData } from "@/utils/detailedData";
 const MobileHeader = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
@@ -27,6 +33,22 @@ const MobileHeader = () => {
   };
 
   const [isScrolling, setIsScrolling] = useState(false);
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [accordionData, setAccordionData] = useState<DataItem[] | []>([]);
+
+  const [expanded, setExpanded] = useState<string | false>();
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+      setExpanded(newExpanded ? panel : false);
+      // console.log("panel", panel);
+      if (panel === "panel2") {
+        setAccordionData(DetailedData.services);
+      }
+      if (panel === "panel3") {
+        setAccordionData(DetailedData.contactPage);
+      }
+    };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,10 +105,35 @@ const MobileHeader = () => {
           </IconButton>
         </Box>
         <List sx={{ mt: 5 }}>
-          {data.headerLinks.map((val, i) => (
-            <ListItemButton key={i} onClick={() => changePath(val.url)}>
-              <ListItemText
-                primary={
+          {data.headerLinks.map((val, i) =>
+            val.icon ? (
+              // <ListItemButton key={i} onClick={(e) => openMenu(i, e)}>
+              //   <ListItemText
+              //     primary={
+              //       <Typography
+              //         sx={{
+              //           textAlign: "center",
+              //           fontSize: 25,
+              //           textTransform: "uppercase",
+              //         }}
+              //       >
+              //         {val.label} {isOpen}
+              //       </Typography>
+              //     }
+              //   />
+              // </ListItemButton>
+              <Accordion
+                sx={{
+                  boxShadow: "none !important",
+                  "::before": {
+                    backgroundColor: "transparent",
+                  },
+                }}
+                // expanded={expanded }
+                onChange={handleChange(`panel${i}`)}
+                expanded={expanded === `panel${i}`}
+              >
+                <AccordionSummary expandIcon={<ExpandMore />}>
                   <Typography
                     sx={{
                       textAlign: "center",
@@ -96,12 +143,54 @@ const MobileHeader = () => {
                   >
                     {val.label}
                   </Typography>
-                }
-              />
-            </ListItemButton>
-          ))}
+                </AccordionSummary>
+                <AccordionDetails>
+                  {accordionData.map((value, index) => (
+                    <ListItemButton
+                      key={index}
+                      onClick={() => changePath(value.url)}
+                    >
+                      <ListItemText
+                        primary={
+                          <Typography
+                            sx={{
+                              textAlign: "start",
+                              fontSize: 18,
+                              textTransform: "uppercase",
+                            }}
+                          >
+                            {value.label}
+                          </Typography>
+                        }
+                      />
+                    </ListItemButton>
+                  ))}
+                </AccordionDetails>
+              </Accordion>
+            ) : (
+              <ListItemButton key={i} onClick={() => changePath(val.url)}>
+                <ListItemText
+                  primary={
+                    <Typography
+                      sx={{
+                        textAlign: "start",
+                        fontSize: 25,
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      {val.label}
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            )
+          )}
         </List>
       </Drawer>
+
+      <Collapse in={isOpen}>
+        <Typography>teste</Typography>
+      </Collapse>
     </div>
   );
 };

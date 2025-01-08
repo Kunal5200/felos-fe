@@ -39,7 +39,7 @@ const Footer2 = () => {
     },
   ];
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
       <Box
         sx={{
           backgroundImage: `url(${footerBanner.src})`,
@@ -70,11 +70,12 @@ const Footer2 = () => {
                     p: 2,
                   }}
                 >
-                  Prefinn is a Fintech Solution Partner firm specializing in
-                  finance and fintech, founded by expert banking professionals
-                  with extensive experience in areas.
+                  Prefinn is a Finance & Fintech Solution firm ventured by
+                  experienced Banking professionals having significant expertise
+                  in the areas of Banking, Digital Lending, Financial Inclusion
+                  & Fintech Product & Services.
                 </Typography>
-                <Typography
+                {/* <Typography
                   sx={{
                     fontFamily: poppins400.style,
                     fontSize: 15,
@@ -83,7 +84,7 @@ const Footer2 = () => {
                   }}
                 >
                   A Fintech Initiative of Prism Business Consultants
-                </Typography>
+                </Typography> */}
 
                 <Stack direction="row" alignItems={"center"} spacing={1} mt={2}>
                   {data.socialIcons.map((val, i) => (
@@ -270,6 +271,24 @@ const Footer2 = () => {
             ></Stack> */}
           </Container>
         </Box>
+        <Stack
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          sx={{ backgroundColor: COLORS.BLACK }}
+        >
+          <Typography
+            sx={{
+              textAlign: "center",
+              color: COLORS.WHITE,
+              p: 1,
+              fontSize: 14,
+              fontFamily: poppins500.style,
+            }}
+          >
+            Copyright © 2025 Prism Business Consultants - All Rights Reserved
+          </Typography>
+        </Stack>
       </Box>
     </Box>
   );

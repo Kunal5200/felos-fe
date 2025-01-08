@@ -23,7 +23,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
         modules={[EffectFade, Autoplay]}
         effect="fade"
         autoplay={{
-          delay: 6000,
+          delay: 8000,
         }}
       >
         {data.map((val, i) => (
@@ -51,7 +51,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                     container
                     className="animate__animated animate__fadeInDown"
                   >
-                    <Grid2 size={{ lg: 8, xs: 12 }}>
+                    <Grid2 size={{ lg: 7, xs: 12 }}>
                       <Typography
                         sx={{
                           color: COLORS.WHITE,
@@ -65,7 +65,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: { lg: 40, xs: 30 },
+                          fontSize: { lg: 50, xs: 30 },
                           fontFamily: poppins800.style,
                           color: COLORS.PRIMARY,
                           textTransform: "capitalize",
@@ -75,7 +75,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: { lg: 16, xs: 12 },
+                          fontSize: { lg: 20, xs: 12 },
                           fontFmaily: poppins500.style,
                           color: COLORS.WHITE,
                           fontWeight: "600 !important",
@@ -89,7 +89,7 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                         spacing={2}
                         sx={{ mt: 2 }}
                       >
-                        <Link href="/about">
+                        <Link href="/contact">
                           <Button
                             sx={{
                               backgroundColor: COLORS.BLUE,
@@ -99,23 +99,6 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                               width: 180,
                               borderRadius: 8,
                               fontWeight: "550 !important",
-                              p: 1,
-                            }}
-                          >
-                            About Company
-                          </Button>
-                        </Link>
-                        <Link href={"/contact"}>
-                          <Button
-                            sx={{
-                              backgroundColor: COLORS.TRANSPARENT,
-                              color: COLORS.WHITE,
-                              fontSize: 12,
-                              fontFamily: poppins500.style,
-                              width: 180,
-                              borderRadius: 8,
-                              fontWeight: "550 !important",
-                              border: `1px solid ${COLORS.WHITE}`,
                               p: 1,
                             }}
                           >

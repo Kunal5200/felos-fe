@@ -17,7 +17,7 @@ const Form = () => {
       <Typography
         sx={{
           color: COLORS.WHITE,
-          fontSize: { lg: 14, xs: 12 },
+          fontSize: { lg: 20, xs: 12 },
           fontFamily: poppins500.style,
           letterSpacing: 4,
         }}
@@ -36,7 +36,7 @@ const Form = () => {
           mt: 3,
         }}
       >
-        To explore how we can help to{" "}
+        to become our{" "}
         <Typography
           sx={{
             fontFamily: poppins600.style,
@@ -45,9 +45,9 @@ const Form = () => {
           }}
           component={"span"}
         >
-          transform your fintech
+          preferred partner
         </Typography>{" "}
-        journey!
+        for loan distribution
       </Typography>
 
       <Box sx={{ mt: 5 }}>
@@ -63,7 +63,7 @@ const Form = () => {
               />
             </Grid2>
             <Grid2 size={12}>
-              <Autocomplete
+              {/* <Autocomplete
                 renderInput={(params) => (
                   <TextField
                     label="I would like to discuss"
@@ -73,6 +73,13 @@ const Form = () => {
                   />
                 )}
                 options={data.dataOptions}
+              /> */}
+              <TextField
+                sx={{
+                  ...loginTextField,
+                }}
+                fullWidth
+                label="Mobile Number*"
               />
             </Grid2>
             <Grid2 size={12}>
@@ -84,13 +91,31 @@ const Form = () => {
                 label="Email*"
               />
             </Grid2>
+            <Grid2 size={{ lg: 6, xs: 12 }}>
+              <TextField
+                sx={{
+                  ...loginTextField,
+                }}
+                fullWidth
+                label="City*"
+              />
+            </Grid2>
+            <Grid2 size={{ lg: 6, xs: 12 }}>
+              <TextField
+                sx={{
+                  ...loginTextField,
+                }}
+                fullWidth
+                label="state*"
+              />
+            </Grid2>
             <Grid2 size={12}>
               <TextField
                 sx={{
                   ...loginTextField,
                 }}
                 fullWidth
-                label="Mobile Number*"
+                label="Pin code*"
               />
             </Grid2>
             <Grid2 size={12}>

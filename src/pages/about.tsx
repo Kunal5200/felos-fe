@@ -67,7 +67,20 @@ const Company = () => {
   ];
   return (
     <div>
-      <Banner img={aboutBanner.src} heading="About Us" />
+      <Banner img={aboutBanner.src} heading="About Prefinn" />
+
+      <Box sx={{ pt: 5 }}>
+        <Container>
+          <Typography
+            sx={{ mt: 1, fontSize: 15, fontFamily: poppins500.style }}
+          >
+            Prefinn is a Finance & Fintech Solution firm ventured by experienced
+            Banking professionals having significant expertise in the areas of
+            Banking, Digital Lending, Financial Inclusion & Fintech Product &
+            Services.
+          </Typography>
+        </Container>
+      </Box>
       <Box sx={{ pb: 10, pt: 10 }}>
         <About
           heading1="Our Founder"
@@ -82,8 +95,29 @@ His strategic vision and solutions empower fintech companies and financial insti
           img={founder}
         />
       </Box>
-      <Container>
+      <Container sx={{ pb: 10 }}>
         <Grid2 container spacing={6}>
+          {approach.map((val, i) => (
+            <Grid2 size={{ lg: 6, xs: 12 }} key={i}>
+              <Card
+                sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
+              >
+                <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
+                  {val.heading}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: 14,
+                    fontFamily: poppins400.style,
+                    color: COLORS.BLACK,
+                    mt: 2,
+                  }}
+                >
+                  {val.description}
+                </Typography>
+              </Card>
+            </Grid2>
+          ))}
           <Grid2 size={12}>
             <Card
               sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
@@ -167,42 +201,13 @@ His strategic vision and solutions empower fintech companies and financial insti
               </Typography>
             </Card>
           </Grid2>
-          {approach.map((val, i) => (
-            <Grid2 size={{ lg: 6, xs: 12 }} key={i}>
-              <Card
-                sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
-              >
-                <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
-                  {val.heading}
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: 14,
-                    fontFamily: poppins400.style,
-                    color: COLORS.BLACK,
-                    mt: 2,
-                  }}
-                >
-                  {val.description}
-                </Typography>
-              </Card>
-            </Grid2>
-          ))}
         </Grid2>
       </Container>
 
-      {/* <Box sx={{ pb: 10 }}>
-        <AboutServices />
-      </Box> */}
       <Box sx={{ pb: 10 }}>
         <ContinuousSlider />
       </Box>
-      <Box sx={{ pt: 10, pb: 10 }}>
-        <Testimonials />
-      </Box>
-      {/* <Box sx={{ pb: 10 }}>
-        <VideoSection />
-      </Box> */}
+
       <Box sx={{ pb: 10 }}>
         <Partner />
       </Box>

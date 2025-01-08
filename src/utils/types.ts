@@ -96,11 +96,21 @@ export interface ABOUTDESCRIPTION {
 export interface SERVICEDATA {
   heading: string;
   description: string;
-  onClick?: () => {};
+  onClick?: () => void;
 }
 
 export interface CHOOSEPROPS {
   img: StaticImageData;
   heading: string;
   content: string;
+}
+
+export interface DataItem {
+  label: string;
+  url: string;
+}
+
+export interface Data {
+  contactPage: DataItem[];
+  services: DataItem[];
 }

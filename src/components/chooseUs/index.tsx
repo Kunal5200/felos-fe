@@ -15,7 +15,7 @@ const ChooseUs = () => {
 
         <Grid2 container mt={4} spacing={4}>
           {data.chooseData.map((val, i) => (
-            <Grid2 size={{ lg: 4, xs: 12 }} key={i}>
+            <Grid2 size={{ lg: 3, xs: 12 }} key={i}>
               <ChooseCard
                 img={val.img}
                 heading={val.heading}

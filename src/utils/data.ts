@@ -12,7 +12,14 @@ import partner1 from "@/partner/partner-1.webp";
 import partner2 from "@/partner/partner-2.webp";
 import partner3 from "@/partner/partner-3.webp";
 import partner4 from "@/partner/partner-4.webp";
-import { Instagram, LocationOn, Phone, X, YouTube } from "@mui/icons-material";
+import {
+  Instagram,
+  KeyboardArrowDown,
+  LocationOn,
+  Phone,
+  X,
+  YouTube,
+} from "@mui/icons-material";
 import { FaFacebookF } from "react-icons/fa";
 
 import serviceIcon1 from "@/aboutServices/icon-1.png";
@@ -77,10 +84,12 @@ export const data = {
     {
       label: "Services",
       url: "/services",
+      icon: true,
     },
     {
       label: "Contact Us",
       url: "/contact",
+      icon: true,
     },
   ],
   offerData: [
@@ -136,11 +145,11 @@ export const data = {
   ],
   accordionData: [
     {
-      label: "Finance Management",
+      label: "Loan Distribution",
       // value:
       //   "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
       value:
-        "We collaborate with multiple stakeholders across the country to create a robust distribution network of our Loan Products.",
+        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) & 130+ Partner Banks and NBFCs.",
       lisHeading: "Our Distribution Partners:",
       list: [
         {
@@ -154,6 +163,30 @@ export const data = {
         },
         {
           label: "Independent Tax Consultants",
+        },
+      ],
+    },
+    {
+      label: "Our Loan Products",
+      // value:
+      //   "We work with RBI-mandated institutions to align FinTech BCAs (Business Correspondent Agents) and MFI DRAs (Debt Recovery Agents) for:",
+      value:
+        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
+      list: [
+        {
+          label: "Home Loans",
+        },
+        {
+          label: "Personal Loans",
+        },
+        {
+          label: "Business Loans",
+        },
+        {
+          label: "Loan Against Property (LAP)",
+        },
+        {
+          label: "Working Capital Loans",
         },
       ],
     },
@@ -198,30 +231,6 @@ export const data = {
         },
       ],
     },
-    {
-      label: "Our Loan Products",
-      // value:
-      //   "We work with RBI-mandated institutions to align FinTech BCAs (Business Correspondent Agents) and MFI DRAs (Debt Recovery Agents) for:",
-      value:
-        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
-      list: [
-        {
-          label: "Home Loans",
-        },
-        {
-          label: "Personal Loans",
-        },
-        {
-          label: "Business Loans",
-        },
-        {
-          label: "Loan Against Property (LAP)",
-        },
-        {
-          label: "Working Capital Loans",
-        },
-      ],
-    },
   ],
 
   partner: [
@@ -258,19 +267,19 @@ export const data = {
       heading: "Company",
       list: [
         {
-          label: "Testimonials",
+          label: "About Prefinn",
         },
         {
-          label: "CEO message",
+          label: "Founders Message",
         },
         {
-          label: "Partners",
+          label: "Career",
         },
         {
-          label: "Careers",
+          label: "Terms & Conditions",
         },
         {
-          label: "Success Stories",
+          label: "Privacy Policy",
         },
       ],
     },
@@ -374,7 +383,7 @@ export const data = {
 
   list1: [
     {
-      label: "Banking Sales",
+      label: "Banking Products",
     },
     {
       label: "Digital Lending",
@@ -471,9 +480,15 @@ export const data = {
   chooseData: [
     {
       img: leadership,
-      heading: "Experienced Leadership",
+      heading: "Largest Bank Distribution Network",
       content:
-        "A team of Banking and Fintech Professionals with proven Industry experience.",
+        "Opportunity to Avail all Loan Products from 130+ Partner bank and NBFC’s.",
+    },
+    {
+      img: result,
+      heading: "Zero Investment for Partners",
+      content:
+        "No Joining Fees,work as Independent Business Owners for Prefinn and Unlock your Financial Growth Potential!!",
     },
     {
       img: strategy,
@@ -481,10 +496,38 @@ export const data = {
       content: "Customized strategies to align with your business objectives.",
     },
     {
-      img: result,
-      heading: "Quick Results",
+      img: leadership,
+      heading: "Experienced Leadership",
       content:
-        "Helping you maximise Distribution business and achieve profitability.",
+        "A team of Banking and Fintech Professionals with proven Industry experience.",
+    },
+  ],
+
+  contactPage: [
+    {
+      label: "Partner Enquiry",
+      url: "/contact/partner-enquiry",
+    },
+    {
+      label: "Loan Enquiry",
+      url: "/contact/loan-enquiry",
+    },
+  ],
+  loanProducts: [
+    {
+      label: "Home Loan",
+    },
+    {
+      label: "Personal Loans",
+    },
+    {
+      label: "Business Loans",
+    },
+    {
+      label: "Loan Against Property(LAP)",
+    },
+    {
+      label: "Working Capital Loans",
     },
   ],
 };

@@ -1,4 +1,4 @@
-import { Box, CardActionArea, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, Typography } from "@mui/material";
 import React, { useState } from "react";
 import bg from "@/offer/img-1.jpeg";
 import { COLORS } from "@/utils/colors";
@@ -11,13 +11,14 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <CardActionArea>
+    <Card>
       <Box
         sx={{
           position: "relative",
           overflow: "hidden",
           transition: "all 0.5s ease-in-out",
           transform: hovered ? "scale(1.05)" : "scale(1)",
+          boxShadow: "0px 0px 10px 10px rgb(0,0,0,0.10)",
         }}
         onMouseOver={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -104,7 +105,7 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
           }}
         ></Box>
       </Box>
-    </CardActionArea>
+    </Card>
   );
 };
 

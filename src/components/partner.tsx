@@ -16,7 +16,7 @@ const Partner = () => {
             textAlign: "center",
           }}
         >
-          Our Strategic Partners
+          Our Strategic partners and Clients
         </Typography>
         <Swiper
           breakpoints={{
@@ -49,7 +49,7 @@ const Partner = () => {
                   height: 200,
                 }}
               >
-                <Image src={val.img} alt="" width={200} />
+                <Image src={val.img} alt="" width={150} />
               </Box>
             </SwiperSlide>
           ))}

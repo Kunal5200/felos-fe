@@ -8,15 +8,15 @@ import { CHOOSEPROPS } from "@/utils/types";
 const ChooseCard = ({ img, heading, content }: CHOOSEPROPS) => {
   return (
     <div>
-      <Card sx={{ p: 2, height: 180 }}>
+      <Card sx={{ p: 2, height: 200,textAlign:"center " }}>
         <Image src={img} alt="" width={40} />
 
-        <Typography sx={{ fontSize: 20, fontFamily: poppins500.style, mt: 1 }}>
+        <Typography sx={{ fontSize: 17, fontFamily: poppins500.style, mt: 1 }}>
           {heading}
         </Typography>
         <Typography
           sx={{
-            fontSize: 17,
+            fontSize: 14,
             fontFamily: poppins400.style,
             mt: 1,
             color: COLORS.GREY,

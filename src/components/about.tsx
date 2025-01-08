@@ -12,6 +12,7 @@ import {
   TextareaAutosize,
   TextField,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import React from "react";
 import sign from "@/logo/sign.png";
@@ -30,11 +31,12 @@ const About = ({
   listDescription,
   img,
 }: ABOUTDESCRIPTION) => {
+  const phone = useMediaQuery("(max-width:600px)");
   return (
     <div>
       <Container maxWidth="lg">
         <Grid2 container spacing={10} alignItems={"center"}>
-          <Grid2 size={{ lg: 6, xs: 12 }}>
+          <Grid2 size={{ lg: 6, xs: 12 }} data-aos="fade-right">
             <Typography
               sx={{
                 fontSize: 30,
@@ -59,7 +61,7 @@ const About = ({
             <Typography
               sx={{
                 mt: 2,
-                fontSize: 16,
+                fontSize: 14,
                 color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
@@ -70,7 +72,7 @@ const About = ({
             <Typography
               sx={{
                 mt: 2,
-                fontSize: 16,
+                fontSize: 14,
                 color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
@@ -85,7 +87,7 @@ const About = ({
                     primary={
                       <Typography
                         sx={{
-                          fontSize: 16,
+                          fontSize: 14,
                           fontFamily: poppins400.style,
                           color: COLORS.BLACK,
                         }}
@@ -100,7 +102,7 @@ const About = ({
             <Typography
               sx={{
                 mt: 2,
-                fontSize: 16,
+                fontSize: 14,
                 color: COLORS.BLACK,
                 // fontWeight: "500 !important",
                 fontFamily: poppins400.style,
@@ -189,7 +191,7 @@ const About = ({
                 </Button>
               </Box>
             </Card> */}
-            <Image src={img} alt="" width={500} />
+            <Image src={img} alt="" width={phone ? 350 :500} />
           </Grid2>
         </Grid2>
       </Container>
