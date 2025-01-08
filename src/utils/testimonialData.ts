@@ -3,30 +3,37 @@ import profile from "@/banner/profile.jpg";
 export const TestimonialData: TESTIMONIAL_DATA[] = [
   {
     img: profile,
-    name: "Fatma Hassan",
-    designation: "Aramex CO-Founder",
+    name: "Happy to be Onboard Prefinn",
+    designation: "Corporate Client",
     content:
-      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+      "Prefinn Team Advisory for our Business has been impressive, helping us improving our Business, Compliances and Agents Productivity.",
   },
   {
     img: profile,
-    name: "Fatma Hassan",
-    designation: "Aramex CO-Founder",
+    name: "Mr. Vikas",
+    designation: "American Express, Noida",
     content:
-      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+      "Prefinn Team has been very helpful to me by offering Loan against Property and competitive Rate from Many Banks, which helped me to save Interest…",
   },
   {
     img: profile,
-    name: "Fatma Hassan",
-    designation: "Aramex CO-Founder",
+    name: "Mr Yogesh’s Arora",
+    designation: "TCS, Mumbai",
     content:
-      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+      "My Preferred Loan Partner will be always Prefinn who has helped me in Transferring my High Interest Loans to Low Interest rate from new Bank…Thanks Prefinn Team!!",
   },
   {
     img: profile,
-    name: "Fatma Hassan",
-    designation: "Aramex CO-Founder",
+    name: "Independent CA Vinay Kumar",
+    designation: "New Delhi",
     content:
-      "Imagination… What we can easily see is only a small percentage of what is possible. Logistics through innovation & dedication.",
+      "I have got Multiple Banks and NBFC Option now for offering Loans to my Customer become a preferred Loan Distributor Partner with Prefinn!!",
+  },
+  {
+    img: profile,
+    name: "Bhupender Yadav",
+    designation: "Real Estate Agent , Gurgaon",
+    content:
+      "	We prefer Prefinn as our Partner for Loan Distribution for Our Real Estate Clients as they offer Loans from 130+ Banks and NBFCs for all Projects…Good to be partner of Prefinn!!",
   },
 ];

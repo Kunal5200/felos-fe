@@ -86,7 +86,7 @@ const Company = () => {
           heading1="Our Founder"
           coloredHeading=""
           heading2=""
-          description="Prefinn was founded by Mr. Rajesh Upadhyay, an IIM-C alumnus and seasoned banker with over 20 years of experience in banking, finance, and fintech."
+          description="Prefinn will serve as Preferred Finance Partner for all segment of Retail and Institutional Customers. Its Loan Distribution Platform has been created with a vision to offer multiple Loan Products to B2C Customers from any Bank or NBFCs as per their Choice. Prefinn Large Network of IBOs (Independent Business Owners) will assist Customers to find out Suitable Loan product & Bank Partners which will bridge the gap of tailored finance options across the Country. "
           listDescription="Throughout his career in the BFSI sector, Mr. Upadhyay has held key roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank, and ICICI Bank. He has excelled in various domains such as:"
           list={data.list2}
           description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
