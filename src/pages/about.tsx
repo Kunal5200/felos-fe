@@ -16,10 +16,13 @@ import {
   Container,
   Grid2,
   List,
+  ListItem,
+  ListItemAvatar,
   ListItemText,
   Typography,
 } from "@mui/material";
 import founder from "@/partner/founder.jpg";
+import { ArrowForward } from "@mui/icons-material";
 const Company = () => {
   const list1 = [
     {
@@ -139,20 +142,25 @@ His strategic vision and solutions empower fintech companies and financial insti
               </Typography>
               <List>
                 {list1.map((val, i) => (
-                  <ListItemText
-                    primary={
-                      <Typography
-                        key={i}
-                        sx={{
-                          fontSize: 14,
-                          fontFamily: poppins400.style,
-                          color: COLORS.BLACK,
-                        }}
-                      >
-                        {val.label}
-                      </Typography>
-                    }
-                  />
+                  <ListItem disablePadding>
+                    <ListItemAvatar>
+                      <ArrowForward htmlColor={COLORS.BLUE} />
+                    </ListItemAvatar>
+                    <ListItemText
+                      primary={
+                        <Typography
+                          key={i}
+                          sx={{
+                            fontSize: 14,
+                            fontFamily: poppins400.style,
+                            color: COLORS.BLACK,
+                          }}
+                        >
+                          {val.label}
+                        </Typography>
+                      }
+                    />
+                  </ListItem>
                 ))}
               </List>
               <Typography
@@ -169,20 +177,25 @@ His strategic vision and solutions empower fintech companies and financial insti
               </Typography>
               <List>
                 {list2.map((val, i) => (
-                  <ListItemText
-                    primary={
-                      <Typography
-                        key={i}
-                        sx={{
-                          fontSize: 14,
-                          fontFamily: poppins400.style,
-                          color: COLORS.BLACK,
-                        }}
-                      >
-                        {val.label}
-                      </Typography>
-                    }
-                  />
+                  <ListItem disablePadding>
+                    <ListItemAvatar>
+                      <ArrowForward htmlColor={COLORS.BLUE} />
+                    </ListItemAvatar>
+                    <ListItemText
+                      primary={
+                        <Typography
+                          key={i}
+                          sx={{
+                            fontSize: 14,
+                            fontFamily: poppins400.style,
+                            color: COLORS.BLACK,
+                          }}
+                        >
+                          {val.label}
+                        </Typography>
+                      }
+                    />
+                  </ListItem>
                 ))}
               </List>
 

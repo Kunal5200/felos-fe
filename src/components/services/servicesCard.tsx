@@ -23,89 +23,18 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
   };
   return (
     <div>
-      {/* <Card
-        sx={{
-          boxShadow: "none",
-          backgroundColor: hovered ? COLORS.PRIMARY : COLORS.TRANSPARENT,
-          border: `1px solid ${COLORS.PRIMARY}`,
-          borderRadius: 2,
-          p: 3,
-          position: "relative",
-          ":hover": {
-            backgroundColor: COLORS.PRIMARY,
-          },
-
-          transition: "0.5s ease all",
-          height: 300,
-        }}
-        onMouseOver={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        <Stack spacing={2}>
-          <Image
-            src={hovered ? blackIcon : yellowIcon}
-            alt=""
-            width={40}
-            height={40}
-          />
-          <Typography
-            sx={{
-              textTransform: "capitalize",
-              color: hovered ? COLORS.BLACK : COLORS.WHITE,
-              fontSize: 20,
-              fontFamily: poppins.style,
-              fontWeight: 550,
-            }}
-          >
-            {heading}
-          </Typography>
-          <Typography
-            sx={{
-              color: hovered ? COLORS.BLACK : COLORS.GREY,
-              fontSize: 18,
-              mt: 10,
-            }}
-          >
-            {description ? description.slice(0, 130) + "..." : ""}
-          </Typography>
-          <Box>
-            <Button
-              endIcon={<ArrowForward />}
-              sx={{
-                color: hovered ? COLORS.BLACK : COLORS.PRIMARY,
-                ":hover": {
-                  svg: {
-                    transform: "translateX(8px)",
-                  },
-                },
-                svg: {
-                  transition: "0.5s ease all",
-                },
-                fontFamily: poppins.style,
-                fontSize: 14,
-                fontWeight: 500,
-                position: "absolute",
-                bottom: 40,
-              }}
-              onClick={onClick}
-            >
-              Read More
-            </Button>
-          </Box>
-        </Stack>
-      </Card> */}
       <Card
         sx={{
           boxShadow: "none",
-          backgroundColor: hovered ? COLORS.PRIMARY : COLORS.TRANSPARENT,
-          border: `1px solid ${COLORS.PRIMARY}`,
+          backgroundColor: hovered ? COLORS.BLUE : COLORS.TRANSPARENT,
+          border: `1px solid ${COLORS.BLUE}`,
           borderRadius: 2,
           p: 3,
           position: "relative",
           overflow: "hidden",
           height: 250,
           ":hover": {
-            backgroundColor: COLORS.PRIMARY,
+            backgroundColor: COLORS.BLUE,
           },
           transition: "0.5s ease all",
           "::before": {
@@ -134,16 +63,11 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
         onClick={onClick}
       >
         <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
-          {/* <Image
-            src={hovered ? blackIcon : yellowIcon}
-            alt=""
-            width={40}
-            height={40}
-          /> */}
+        
           <Typography
             sx={{
               textTransform: "capitalize",
-              color: hovered ? COLORS.BLACK : COLORS.PRIMARY,
+              color: hovered ? COLORS.WHITE : COLORS.BLUE,
               fontSize: "15px !important",
               fontFamily: poppins500.style,
               fontWeight: 550,
@@ -153,7 +77,7 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
           </Typography>
           <Typography
             sx={{
-              color: hovered ? COLORS.BLACK : COLORS.GREY,
+              color: hovered ? COLORS.WHITE : COLORS.GREY,
               fontSize: 18,
               mt: 10,
             }}
@@ -165,7 +89,7 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
               className=""
               endIcon={<ArrowForward />}
               sx={{
-                color: hovered ? COLORS.BLACK : COLORS.PRIMARY,
+                color: hovered ? COLORS.WHITE : COLORS.BLUE,
                 ":hover": {
                   svg: {
                     transform: "translateX(8px)",

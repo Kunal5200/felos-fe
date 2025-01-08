@@ -7,6 +7,7 @@ import {
   Grid2,
   List,
   ListItem,
+  ListItemAvatar,
   ListItemText,
   Stack,
   TextareaAutosize,
@@ -21,6 +22,7 @@ import { textField } from "@/utils/styles";
 import { poppins600, poppins400, poppins500 } from "@/utils/fonts";
 import { data } from "@/utils/data";
 import { ABOUTDESCRIPTION } from "@/utils/types";
+import { ArrowForward } from "@mui/icons-material";
 const About = ({
   heading1,
   coloredHeading,
@@ -83,6 +85,9 @@ const About = ({
             <List>
               {list?.map((val, i) => (
                 <ListItem disablePadding key={i}>
+                  <ListItemAvatar>
+                    <ArrowForward sx={{ color: COLORS.BLUE }} />
+                  </ListItemAvatar>
                   <ListItemText
                     primary={
                       <Typography
@@ -111,35 +116,7 @@ const About = ({
               {description2}
             </Typography>
 
-            {/* <Stack
-              direction={{ lg: "row", xs: "column" }}
-              alignItems={{ lg: "center", xs: "flex-start" }}
-              justifyContent={"space-between"}
-              mt={5}
-            >
-              <Box>
-                <Typography
-                  sx={{
-                    color: COLORS.BLUE,
-                    fontSize: 16,
-                    fontFamily: poppins500.style,
-                    fontWeight: "500 !important",
-                  }}
-                >
-                  Mohamed Arafa
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: 12,
-                    fontFamily: poppins500.style,
-                    color: COLORS.GREY,
-                  }}
-                >
-                  CO-Founder
-                </Typography>
-              </Box>
-              <Image src={sign} alt="sign" />
-            </Stack> */}
+         
           </Grid2>
           <Grid2 size={{ lg: 6, xs: 11 }}>
             {/* <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
@@ -191,7 +168,7 @@ const About = ({
                 </Button>
               </Box>
             </Card> */}
-            <Image src={img} alt="" width={phone ? 350 :500} />
+            <Image src={img} alt="" width={phone ? 350 : 500} />
           </Grid2>
         </Grid2>
       </Container>

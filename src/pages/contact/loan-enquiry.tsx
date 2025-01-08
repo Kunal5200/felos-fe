@@ -114,7 +114,7 @@ const LoanEnquiry = () => {
                 component={"span"}
                 sx={{
                   fontSize: 30,
-                  color: COLORS.PRIMARY,
+                  color: COLORS.BLUE,
                   fontFamily: poppins600.style,
                 }}
               >

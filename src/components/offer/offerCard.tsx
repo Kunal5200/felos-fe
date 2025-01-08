@@ -6,6 +6,7 @@ import Image from "next/image";
 import icon from "@/offer/icons/icon-1.png";
 import { OFFERDATA } from "@/utils/types";
 import { poppins500, poppins600 } from "@/utils/fonts";
+import Link from "next/link";
 
 const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
   const [hovered, setHovered] = useState(false);
@@ -78,21 +79,24 @@ const OfferCard = ({ img, heading, icon, description }: OFFERDATA) => {
               </Typography>
             )}
             {hovered && (
-              <Typography
-                sx={{
-                  textAlign: "center",
-                  fontSize: 15,
-                  fontFamily: poppins500.style,
-                  color: COLORS.PRIMARY,
-                  position: "absolute",
-                  bottom: 20,
-                  left: "50%",
-                  transform: "translateX(-50%)", // Center text horizontally
-                  transition: "all 0.5s ease-in-out",
-                }}
-              >
-                Learn More
-              </Typography>
+              <Link href={"/contact/loan-enquiry"}>
+                <Typography
+                  sx={{
+                    textAlign: "center",
+                    fontSize: 15,
+                    fontFamily: poppins500.style,
+                    color: COLORS.PRIMARY,
+                    position: "absolute",
+                    bottom: 20,
+                    left: "50%",
+                    transform: "translateX(-50%)", // Center text horizontally
+                    transition: "all 0.5s ease-in-out",
+                    cursor: "pointer",
+                  }}
+                >
+                  Learn More
+                </Typography>
+              </Link>
             )}
           </Box>
         </Box>
