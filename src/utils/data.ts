@@ -175,7 +175,7 @@ export const data = {
       // value:
       //   "We work with RBI-mandated institutions to align FinTech BCAs (Business Correspondent Agents) and MFI DRAs (Debt Recovery Agents) for:",
       value:
-        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 140+ Partner Banks, NBFCs and Fintechs.",
+        "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) through our 130+ Partner Banks, NBFCs and Fintechs.",
       list: [
         {
           label: "Home Loans",
