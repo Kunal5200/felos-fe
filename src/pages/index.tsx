@@ -13,6 +13,8 @@ import { data } from "@/utils/data";
 import { Box } from "@mui/material";
 import Head from "next/head";
 import about from "@/banner/about.png";
+import Faqs from "@/components/faqs";
+import Counter from "@/components/counter";
 export default function Home() {
   return (
     <>
@@ -45,13 +47,17 @@ export default function Home() {
           <Offer />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
-          <Projects />
+          {/* <Projects /> */}
+          <Counter />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <ContinuousSlider />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Testimonials />
+        </Box>
+        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+          <Faqs data={data.faqData} />
         </Box>
         <Box sx={{ pt: { lg: 10, xs: 5 } }}>
           <Partner />

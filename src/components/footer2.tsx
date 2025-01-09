@@ -21,6 +21,7 @@ import { data } from "@/utils/data";
 import { COLORS } from "@/utils/colors";
 import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
 import { Email, LocationOn, Phone } from "@mui/icons-material";
+import { useRouter } from "next/router";
 const Footer2 = () => {
   const phone = useMediaQuery("(max-width:600px)");
 
@@ -38,15 +39,22 @@ const Footer2 = () => {
       label: "Plot No.77, Sector-37, Gurugram, Haryana-122001",
     },
   ];
+
+  const router = useRouter();
+
+  const changePage = (path: string ) => {
+    router.push(path);
+  };
   return (
     <Box sx={{ position: "relative" }}>
       <Box
         sx={{
-          backgroundImage: `url(${footerBanner.src})`,
+          // backgroundImage: `url(${footerBanner.src})`,
           height: { lg: "70vh", xs: "150vh" },
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          backgroundColor: COLORS.BLACK,
         }}
       >
         <Box
@@ -128,6 +136,7 @@ const Footer2 = () => {
                         <ListItemButton
                           key={index}
                           sx={{ padding: 0, paddingBottom: 1 }}
+                          onClick={() => changePage(item.url ? item.url : "")}
                         >
                           <ListItemText
                             primary={

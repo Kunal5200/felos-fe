@@ -49,6 +49,10 @@ import { SERVICESTABS } from "./enum";
 import leadership from "@/icon/leadership.png";
 import strategy from "@/icon/strategy_approach.png";
 import result from "@/icon/result.png";
+import customer from "@/icon/customer-satisfaction.png";
+import loan from "@/icon/loan-dispursed.png";
+import finance from "@/icon/finance-partners.png";
+import distribution from "@/icon/distribution-partners.png";
 export const data = {
   socialIcons: [
     {
@@ -268,18 +272,29 @@ export const data = {
       list: [
         {
           label: "About Prefinn",
+          url: "/about",
         },
         {
           label: "Founders Message",
+          url: "/founder-message",
         },
         {
-          label: "Career",
+          label: "Join Our team",
+          url: "/contact/partner-enquiry",
         },
         {
           label: "Terms & Conditions",
         },
         {
           label: "Privacy Policy",
+        },
+        {
+          label: "Apply for a Loan",
+          url: "/contact/loan-enquiry",
+        },
+        {
+          label: "Become a Partner",
+          url: "/contact/partner-enquiry",
         },
       ],
     },
@@ -528,6 +543,144 @@ export const data = {
     },
     {
       label: "Working Capital Loans",
+    },
+  ],
+  faqData: [
+    {
+      label: "Who can partner with Prefinn?",
+      value:
+        "Anyone from loan agents, ex-bankers, financial analysts, Insurance agents, mutual fund agents, chartered accountants, builders, or professionals from any other field can become an Independent Business Owner by partnering with Prefinn.",
+    },
+    {
+      label: "Is there any charge for joining as a partner with Prefinn?",
+      value: "No, there is absolutely no charge for joining Prefinn.",
+    },
+    {
+      label: "How to become a partner with Prefinn?",
+      list: [
+        {
+          label:
+            "Step 1: Visit the Prefinn website and click on the ‘Become a Partner’ option.",
+        },
+        {
+          label:
+            "Step 2: Complete the registration form by fillng in your details and submitting it.",
+        },
+        {
+          label:
+            "Step 3: A member of the Prefinn support team will contact you to guide you through the next steps and arrange a meeting.",
+        },
+        {
+          label:
+            "Step 4: During the meeting, a Prefinn Manager will explain the lead generation process and provide you with all the necessary information.",
+        },
+        {
+          label:
+            "Step 5: Once you understand and are comfortable with the processes, an agreement will be signed between you and Prefinn.",
+        },
+      ],
+    },
+    {
+      label: "What documents are required for becoming a partner with Prefinn?",
+      list: [
+        {
+          label: "Aadhaar Card",
+        },
+        {
+          label: "PAN Card",
+        },
+        {
+          label: "Two passport-size photographs",
+        },
+        {
+          label: "GST Registration (for companies, if applicable)",
+        },
+        {
+          label:
+            "Proof of Employment: Salary slips if employed; account statements and address proof if running a business; or invoices and financial statements if self-employed.",
+        },
+        {
+          label:
+            "Bank Account Details: Your bank statement for the last 3 months",
+        },
+      ],
+    },
+    {
+      label: "How do Partner earn with Prefinn?",
+      value:
+        "Partners will earn successful disbursement-based commission fees for every type of loan.",
+    },
+    {
+      label: "What support do Prefinn provide to its partner?",
+      list: [
+        {
+          label:
+            "Comprehensive Training: We provide detailed training sessions to help you understand our products, processes, and the market.",
+        },
+        {
+          label:
+            "Marketing Support: You can get leads, marketing materials, and strategies from Prefinn to promote your services effectively.",
+        },
+        {
+          label:
+            "Timely Payouts: We ensure that you receive your commissions on time, providing a smooth and transparent payout process",
+        },
+        {
+          label:
+            "By partnering with Prefinn, you get all the support you need to grow and succeed as a partner.",
+        },
+      ],
+    },
+  ],
+  stepData: [
+    {
+      label: "Step-01",
+      description1:
+        "Fill out the online Apply Loan form on website and provide your Basic details..Call Prefinn Team or wait for Call Back.",
+      description2:
+        "Prefinn Support Team will call you within 24 Hrs to collect your requirements and provide you the suitable Bank options and confirm the terms, conditions, contracts & your loan needs",
+    },
+    {
+      label: "Step-02",
+      description1:
+        "While Discussing with Prefinn Team, select the Bank/NBFC of your Choice for your Loan requirements and provide the required documents and details to our Loan Executive for Filing your Loan Application with your choice of Bank.",
+    },
+    {
+      label: "Step-03",
+      description1:
+        "Once Your Loan Application is filed. Have a personal discussion with Bank Loan Manager and finalise the Loan Amount and Terms and conditions.",
+    },
+    {
+      label: "Step-04",
+      description1:
+        "Meet the Loan Manager in person, sign the original Loan Application file and take Disbursement of Loan Amount in your preferred Bank Account.",
+    },
+  ],
+
+  counterData: [
+    {
+      label: "Happy Customers",
+      number: 32,
+      suffix: "+",
+      img: customer,
+    },
+    {
+      label: "Loan Disbursed",
+      img: loan,
+      number: 22.5,
+      suffix: "cr",
+    },
+    {
+      label: "Finance Partners",
+      img: finance,
+      number: 130,
+      suffix: "+",
+    },
+    {
+      label: "Distribution Partners",
+      img: distribution,
+      number: 70,
+      suffix: "+",
     },
   ],
 };

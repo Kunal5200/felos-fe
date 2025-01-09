@@ -47,7 +47,7 @@ const SubFooter = () => {
                   color: COLORS.WHITE,
                 }}
               >
-                our latest company updates
+                Subscribe our Company Updates
               </Typography>
             </Grid2>
             <Grid2 size={{ lg: 6, xs: 12 }}>

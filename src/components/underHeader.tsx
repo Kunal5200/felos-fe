@@ -43,7 +43,7 @@ const UnderHeader = () => {
   const openPopover = (index: number, e: SyntheticEvent, label: string) => {
     setAnchorEl(e.currentTarget as HTMLElement);
     setActivePopover(index);
-    console.log("inndede", index);
+    // console.log("inndede", index);
     if (label === "Contact Us") {
       setPopoverData(DetailedData.contactPage);
     }

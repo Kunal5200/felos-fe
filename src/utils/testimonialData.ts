@@ -3,7 +3,7 @@ import profile from "@/banner/profile.jpg";
 export const TestimonialData: TESTIMONIAL_DATA[] = [
   {
     img: profile,
-    name: "Happy to be Onboard Prefinn",
+    name: "Happy to Onboard Prefinn",
     designation: "Corporate Client",
     content:
       "Prefinn Team Advisory for our Business has been impressive, helping us improving our Business, Compliances and Agents Productivity.",

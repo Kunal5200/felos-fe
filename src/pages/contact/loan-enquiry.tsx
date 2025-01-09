@@ -1,24 +1,20 @@
 import banner from "@/banner/contact-banner.jpeg";
-import london from "@/banner/london.jpg";
 import Banner from "@/components/banner";
-import ContactCard from "@/components/contact/contactCard";
-import { data } from "@/utils/data";
-import {
-  Autocomplete,
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid2,
-  ListItemButton,
-  TextareaAutosize,
-  TextField,
-  Typography,
-} from "@mui/material";
-import tokyo1 from "@/banner/tokyo-2.jpg";
-import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
+import LoanStep from "@/components/loanSteps";
 import { COLORS } from "@/utils/colors";
-import { blackTextField, loginTextField } from "@/utils/styles";
+import { data } from "@/utils/data";
+import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
+import { blackTextField } from "@/utils/styles";
+import {
+    Autocomplete,
+    Box,
+    Button,
+    Container,
+    Divider,
+    Grid2,
+    TextField,
+    Typography
+} from "@mui/material";
 const LoanEnquiry = () => {
   return (
     <div>
@@ -77,6 +73,9 @@ const LoanEnquiry = () => {
           </Grid2>
         </Grid2>
       </Container> */}
+      <Box sx={{ pt: 10 }}>
+        <LoanStep />
+      </Box>
       <Container sx={{ mt: 7, pb: 10 }}>
         <Grid2 container>
           <Grid2 size={{ lg: 5, xs: 12 }} margin="auto">

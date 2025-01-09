@@ -32,6 +32,7 @@ const About = ({
   description2,
   listDescription,
   img,
+  fontWeight,
 }: ABOUTDESCRIPTION) => {
   const phone = useMediaQuery("(max-width:600px)");
   return (
@@ -41,9 +42,8 @@ const About = ({
           <Grid2 size={{ lg: 6, xs: 12 }} data-aos="fade-right">
             <Typography
               sx={{
-                fontSize: 30,
-                fontFamily: poppins400.style,
-                fontWeight: "300 !important",
+                fontSize: fontWeight ? 20 : 30,
+                fontFamily: fontWeight ? poppins600.style : poppins400.style,
               }}
             >
               {heading1} ,{" "}
@@ -115,8 +115,6 @@ const About = ({
             >
               {description2}
             </Typography>
-
-         
           </Grid2>
           <Grid2 size={{ lg: 6, xs: 11 }}>
             {/* <Card sx={{ width: "100%", margin: "auto", p: 2 }}>

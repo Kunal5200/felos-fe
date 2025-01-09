@@ -91,6 +91,7 @@ export interface ABOUTDESCRIPTION {
   description2: string;
   listDescription?: string;
   img: StaticImageData;
+  fontWeight?: string;
 }
 
 export interface SERVICEDATA {
@@ -113,4 +114,14 @@ export interface DataItem {
 export interface Data {
   contactPage: DataItem[];
   services: DataItem[];
+}
+
+export interface FAQPROPS {
+  label: string;
+  value?: string;
+  list?: LIST[];
+}
+
+export interface FAQDATA {
+  data: FAQPROPS[];
 }

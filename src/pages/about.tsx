@@ -95,6 +95,7 @@ const Company = () => {
           description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
 His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success.
 "
+          fontWeight="400"
           img={founder}
         />
       </Box>
@@ -126,7 +127,7 @@ His strategic vision and solutions empower fintech companies and financial insti
               sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
             >
               <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
-                Our Prefinn Team
+                Our  Team
               </Typography>
               <Typography
                 sx={{

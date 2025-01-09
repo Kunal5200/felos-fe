@@ -3,11 +3,11 @@ import { Data } from "./types";
 export const DetailedData: Data = {
   contactPage: [
     {
-      label: "Partner Enquiry",
+      label: "Become a Partner",
       url: "/contact/partner-enquiry",
     },
     {
-      label: "Loan Enquiry",
+      label: "Apply for a Loan",
       url: "/contact/loan-enquiry",
     },
   ],
