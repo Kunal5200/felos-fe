@@ -7,7 +7,7 @@ const FounderMessage = () => {
     <div>
       <Box sx={{ pt: 5, pb: 5 }}>
         <Container>
-          <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>``
+          <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
             {" "}
             Founder’s Message
           </Typography>
