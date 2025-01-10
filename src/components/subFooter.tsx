@@ -31,7 +31,7 @@ const SubFooter = () => {
         <Container>
           <Grid2 container alignItems={"center"}>
             <Grid2 size={{ lg: 6, xs: 12 }}>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: 18,
                   fontFamily: poppins500.style,
@@ -39,7 +39,7 @@ const SubFooter = () => {
                 }}
               >
                 Subscribe for recieve
-              </Typography>
+              </Typography> */}
               <Typography
                 sx={{
                   fontSize: { lg: 30, xs: 20 },
@@ -47,7 +47,7 @@ const SubFooter = () => {
                   color: COLORS.WHITE,
                 }}
               >
-                Subscribe our Company Updates
+               Subscribe for our company updates
               </Typography>
             </Grid2>
             <Grid2 size={{ lg: 6, xs: 12 }}>
