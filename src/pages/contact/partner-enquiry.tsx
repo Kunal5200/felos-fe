@@ -107,7 +107,7 @@ const PartnerEnquiry = () => {
                 mt: 2,
               }}
             >
-              Send Us Your{" "}
+              Become a {" "}
               <Typography
                 component={"span"}
                 sx={{
@@ -116,7 +116,7 @@ const PartnerEnquiry = () => {
                   fontFamily: poppins600.style,
                 }}
               >
-                Message{" "}
+                Partner{" "}
               </Typography>
             </Typography>
           </Grid2>
