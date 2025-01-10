@@ -13,7 +13,7 @@ const Certification = () => {
   };
   return (
     <div>
-      <Banner img={servicesBanner.src} heading="Certification" />
+      <Banner img={servicesBanner.src} heading="Training & Certifications" />
 
       <Container sx={{ pt: 10, pb: 10 }}>
         <Grid2 container spacing={4}>

@@ -34,6 +34,13 @@ export const TestimonialData: TESTIMONIAL_DATA[] = [
     name: "Bhupender Yadav",
     designation: "Real Estate Agent , Gurgaon",
     content:
-      "	We prefer Prefinn as our Partner for Loan Distribution for Our Real Estate Clients as they offer Loans from 130+ Banks and NBFCs for all Projects…Good to be partner of Prefinn!!",
+      "We prefer Prefinn as our Partner for Loan Distribution for Our Real Estate Clients as they offer Loans from 130+ Banks and NBFCs for all Projects…Good to be partner of Prefinn!!",
+  },
+  {
+    img: profile,
+    name: "Mr Manoj Garg",
+    designation: "Owner Swayam, Gurgaon",
+    content:
+      "Prefinn Team has helped us in getting higher LTV for my Business at best rate of Interest within shortest time period…Happy to have Prefinn around us!!",
   },
 ];

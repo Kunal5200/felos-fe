@@ -20,7 +20,7 @@ import {
   X,
   YouTube,
 } from "@mui/icons-material";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 import serviceIcon1 from "@/aboutServices/icon-1.png";
 import serviceIcon2 from "@/aboutServices/icon-2.png";
@@ -66,6 +66,9 @@ export const data = {
     },
     {
       icon: YouTube,
+    },
+    {
+      icon: FaLinkedinIn,
     },
   ],
   headerLinks: [

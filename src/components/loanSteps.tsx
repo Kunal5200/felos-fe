@@ -1,6 +1,6 @@
 import { COLORS } from "@/utils/colors";
 import { data } from "@/utils/data";
-import { poppins400, poppins500, poppins600 } from "@/utils/fonts";
+import { poppins400, poppins500, poppins600, poppins700 } from "@/utils/fonts";
 import {
   Avatar,
   Box,
@@ -37,13 +37,13 @@ const LoanStep = () => {
           justifyContent={"center"}
         >
           <Box sx={{textAlign:"center"}}>
-            <Typography sx={{ fontSize: 25, fontFamily: poppins600.style,textAlign:"center" }}>
+            {/* <Typography sx={{ fontSize: 25, fontFamily: poppins600.style,textAlign:"center" }}>
               APPLY YOUR LOAN
-            </Typography>
+            </Typography> */}
             <Typography
-              sx={{ fontSize: 14, fontFamily: poppins400.style, mt: 2,textAlign:"center" }}
+              sx={{ fontSize: 20, fontFamily: poppins700.style, mt: 2,textAlign:"center" }}
             >
-              How to apply for a loan with Prefinn: -
+              How to apply for a loan with Prefinn?
             </Typography>
           </Box>
           {/* <Stack direction={"row"} alignItems={"center"} spacing={10}>
