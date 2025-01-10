@@ -84,7 +84,7 @@ const Company = () => {
           </Typography>
         </Container>
       </Box>
-      <Box sx={{ pb: 10, pt: 10 }}>
+      <Box sx={{ pb: 5, pt: 5 }}>
         <About
           heading1="Our Founder"
           coloredHeading=""
@@ -99,7 +99,7 @@ His strategic vision and solutions empower fintech companies and financial insti
           img={founder}
         />
       </Box>
-      <Container sx={{ pb: 10 }}>
+      <Container sx={{ pb: 5 }}>
         <Grid2 container spacing={6}>
           {approach.map((val, i) => (
             <Grid2 size={{ lg: 6, xs: 12 }} key={i}>
@@ -218,11 +218,11 @@ His strategic vision and solutions empower fintech companies and financial insti
         </Grid2>
       </Container>
 
-      <Box sx={{ pb: 10 }}>
+      <Box sx={{ pb: 5 }}>
         <ContinuousSlider />
       </Box>
 
-      <Box sx={{ pb: 10 }}>
+      <Box sx={{ pb: 5 }}>
         <Partner />
       </Box>
     </div>

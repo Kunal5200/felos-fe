@@ -37,32 +37,32 @@ export default function Home() {
             img={about}
           />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <ChooseUs />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <Investment />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <Offer />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           {/* <Projects /> */}
           <Counter />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <ContinuousSlider />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <Testimonials />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <Faqs data={data.faqData} />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 } }}>
           <Partner />
         </Box>
-        <Box sx={{ pt: { lg: 10, xs: 5 }, pb: { lg: 10, xs: 5 } }}>
+        <Box sx={{ pt: { lg: 5, xs: 5 }, pb: { lg: 5, xs: 5 } }}>
           <ContactSection />
         </Box>
       </Box>

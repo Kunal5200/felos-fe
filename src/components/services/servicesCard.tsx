@@ -26,27 +26,29 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
       <Card
         sx={{
           boxShadow: "none",
-          backgroundColor: hovered ? COLORS.BLUE : COLORS.TRANSPARENT,
+          backgroundColor: COLORS.BLUE,
           border: `1px solid ${COLORS.BLUE}`,
           borderRadius: 2,
           p: 3,
           position: "relative",
           overflow: "hidden",
-          height: 250,
+          height: 200,
           ":hover": {
             backgroundColor: COLORS.BLUE,
           },
           transition: "0.5s ease all",
           "::before": {
             content: '""',
-            position: "absolute",
+            position: hovered ? "absolute" : "absolute",
             top: 0,
-            left: "-150%",
+            left: hovered ? "-150%" : "0",
             width: "300%",
             height: "100%",
-            background: `linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent)`,
+            background: hovered
+              ? `linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent)`
+              : "transparent",
             transform: "rotate(45deg)",
-            animation: hovered ? "beam-animation 1s ease-in-out" : "none",
+            animation: hovered ? "beam-animation 1s ease-in-out" : "",
             zIndex: 0,
           },
           "@keyframes beam-animation": {
@@ -55,22 +57,22 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
           },
           cursor: "pointer",
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "center",
         }}
         onMouseOver={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         onClick={onClick}
       >
-        <Stack spacing={2} sx={{ position: "relative", zIndex: 1 }}>
-        
+        <Stack spacing={2} sx={{ zIndex: 1 }} >
           <Typography
             sx={{
               textTransform: "capitalize",
-              color: hovered ? COLORS.WHITE : COLORS.BLUE,
-              fontSize: "15px !important",
+              color: hovered ? COLORS.WHITE : COLORS.WHITE,
+              fontSize: "18px !important",
               fontFamily: poppins500.style,
               fontWeight: 550,
+              mb: 3,
             }}
           >
             {heading}
@@ -78,37 +80,35 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
           <Typography
             sx={{
               color: hovered ? COLORS.WHITE : COLORS.GREY,
-              fontSize: 18,
+              fontSize: 15,
               mt: 10,
             }}
           >
             {description ? description.slice(0, 130) + "..." : ""}
           </Typography>
-          <Box>
-            <Button
-              className=""
-              endIcon={<ArrowForward />}
-              sx={{
-                color: hovered ? COLORS.WHITE : COLORS.BLUE,
-                ":hover": {
-                  svg: {
-                    transform: "translateX(8px)",
-                  },
-                },
+          <Button
+            className=""
+            endIcon={<ArrowForward />}
+            sx={{
+              color: hovered ? COLORS.WHITE : COLORS.WHITE,
+              ":hover": {
                 svg: {
-                  transition: "0.5s ease all",
+                  transform: "translateX(8px)",
                 },
-                fontFamily: poppins400.style,
-                fontSize: 14,
-                fontWeight: 500,
-                position: "absolute",
-                bottom: -50,
-              }}
-              onClick={onClick}
-            >
-              Read More
-            </Button>
-          </Box>
+              },
+              svg: {
+                transition: "0.5s ease all",
+              },
+              fontFamily: poppins400.style,
+              fontSize: 14,
+              fontWeight: 500,
+              position: "absolute",
+              bottom: 10,
+            }}
+            onClick={onClick}
+          >
+            Read More
+          </Button>
         </Stack>
       </Card>
     </div>

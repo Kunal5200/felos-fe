@@ -34,14 +34,14 @@ const LoanStep = () => {
         <Stack
           direction={"row"}
           alignItems={"center"}
-          justifyContent={"space-between"}
+          justifyContent={"center"}
         >
-          <Box>
-            <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
+          <Box sx={{textAlign:"center"}}>
+            <Typography sx={{ fontSize: 25, fontFamily: poppins600.style,textAlign:"center" }}>
               APPLY YOUR LOAN
             </Typography>
             <Typography
-              sx={{ fontSize: 14, fontFamily: poppins400.style, mt: 2 }}
+              sx={{ fontSize: 14, fontFamily: poppins400.style, mt: 2,textAlign:"center" }}
             >
               How to apply for a loan with Prefinn: -
             </Typography>
@@ -123,7 +123,7 @@ const LoanStep = () => {
         </Stepper> */}
         <Grid2 container spacing={3} mt={4}>
           {data.stepData.map((val, i) => (
-            <Grid2 size={{ lg: 3, xs: 12 }}>
+            <Grid2 size={{ lg: 6, xs: 12 }}>
               <Card
                 sx={{
                   textAlign: "center",

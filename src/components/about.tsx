@@ -38,7 +38,7 @@ const About = ({
   return (
     <div>
       <Container maxWidth="lg">
-        <Grid2 container spacing={10} alignItems={"center"}>
+        <Grid2 container spacing={10} alignItems={"start"}>
           <Grid2 size={{ lg: 6, xs: 12 }} data-aos="fade-right">
             <Typography
               sx={{
@@ -46,7 +46,7 @@ const About = ({
                 fontFamily: fontWeight ? poppins600.style : poppins400.style,
               }}
             >
-              {heading1} ,{" "}
+              {heading1}{" "}
               <Typography
                 sx={{
                   fontSize: 30,
@@ -104,19 +104,21 @@ const About = ({
                 </ListItem>
               ))}
             </List>
-            <Typography
-              sx={{
-                mt: 2,
-                fontSize: 14,
-                color: COLORS.BLACK,
-                // fontWeight: "500 !important",
-                fontFamily: poppins400.style,
-              }}
-            >
-              {description2}
-            </Typography>
+            {/* {!fontWeight && (
+              <Typography
+                sx={{
+                  mt: 2,
+                  fontSize: 14,
+                  color: COLORS.BLACK,
+                  // fontWeight: "500 !important",
+                  fontFamily: poppins400.style,
+                }}
+              >
+                {description2}
+              </Typography>
+            )} */}
           </Grid2>
-          <Grid2 size={{ lg: 6, xs: 11 }}>
+          <Grid2 size={{ lg: 6, xs: 11 }} sx={{ textAlign: "center" }}>
             {/* <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
               <Typography
                 sx={{
@@ -166,9 +168,22 @@ const About = ({
                 </Button>
               </Box>
             </Card> */}
-            <Image src={img} alt="" width={phone ? 350 : 500} />
+            <Image src={img} alt="" width={phone ? 350 : 400} />
           </Grid2>
         </Grid2>
+        {/* {fontWeight && ( */}
+          <Typography
+            sx={{
+              mt: 2,
+              fontSize: 14,
+              color: COLORS.BLACK,
+              // fontWeight: "500 !important",
+              fontFamily: poppins400.style,
+            }}
+          >
+            {description2}
+          </Typography>
+        {/* )} */}
       </Container>
     </div>
   );

@@ -50,16 +50,16 @@ const Footer2 = () => {
       <Box
         sx={{
           // backgroundImage: `url(${footerBanner.src})`,
-          height: { lg: "70vh", xs: "150vh" },
+          height: { lg: "60vh", xs: "150vh" },
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor: COLORS.BLACK,
+          backgroundColor:COLORS.WHITE ,
         }}
       >
         <Box
           sx={{
-            backgroundColor: "rgba(0,0,0,0.70)",
+            // backgroundColor: "rgba(0,0,0,0.70)",
             height: "100%",
             display: "flex",
             alignItems: "center",
@@ -74,7 +74,7 @@ const Footer2 = () => {
                   sx={{
                     fontFamily: poppins400.style,
                     fontSize: 15,
-                    color: COLORS.WHITE,
+                    color: COLORS.BLACK,
                     p: 2,
                   }}
                 >
@@ -98,7 +98,7 @@ const Footer2 = () => {
                   {data.socialIcons.map((val, i) => (
                     <IconButton
                       sx={{
-                        color: COLORS.WHITE,
+                        color: COLORS.BLACK,
                         ":hover": {
                           svg: {
                             color: COLORS.PRIMARY,
@@ -124,7 +124,7 @@ const Footer2 = () => {
                       sx={{
                         fontSize: { lg: 18, xs: 15 },
                         fontFamily: poppins600.style,
-                        color: COLORS.WHITE,
+                        color: COLORS.BLACK,
 
                         mb: 1,
                       }}
@@ -144,7 +144,7 @@ const Footer2 = () => {
                                 sx={{
                                   fontSize: { lg: 14, xs: 12 },
                                   fontFamily: poppins500.style,
-                                  color: COLORS.WHITE,
+                                  color: COLORS.BLACK,
                                 }}
                               >
                                 {item.label}
@@ -162,7 +162,7 @@ const Footer2 = () => {
                   sx={{
                     fontSize: { lg: 18, xs: 14 },
                     fontFamily: poppins600.style,
-                    color: COLORS.WHITE,
+                    color: COLORS.BLACK,
 
                     mb: 1,
                   }}
@@ -190,7 +190,7 @@ const Footer2 = () => {
                           <Typography
                             sx={{
                               fontSize: { lg: 15, xs: 12 },
-                              color: COLORS.WHITE,
+                              color: COLORS.BLACK,
                               ml: 4,
                               fontFamily: poppins600.style,
                             }}
@@ -214,7 +214,7 @@ const Footer2 = () => {
                 {data.socialIcons.map((val, i) => (
                   <IconButton
                     sx={{
-                      color: COLORS.WHITE,
+                      color: COLORS.BLACK,
                       ":hover": {
                         svg: {
                           color: COLORS.PRIMARY,
@@ -242,7 +242,7 @@ const Footer2 = () => {
                     sx={{
                       fontSize: 18,
                       fontFamily: poppins600.style,
-                      color: COLORS.WHITE,
+                      color: COLORS.BLACK,
                     }}
                   >
                     {val.heading}
@@ -259,7 +259,7 @@ const Footer2 = () => {
                               sx={{
                                 fontSize: 12,
                                 fontFamily: poppins500.style,
-                                color: COLORS.WHITE,
+                                color: COLORS.BLACK,
                               }}
                             >
                               {item.label}

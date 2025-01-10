@@ -1,5 +1,5 @@
 import { COLORS } from "@/utils/colors";
-import { poppins500, poppins800 } from "@/utils/fonts";
+import { poppins400, poppins500, poppins800 } from "@/utils/fonts";
 import { BANNERPROPS } from "@/utils/types";
 import {
   Box,
@@ -76,9 +76,9 @@ const HeroSection = ({ data }: BANNERPROPS) => {
                       <Typography
                         sx={{
                           fontSize: { lg: 20, xs: 12 },
-                          fontFmaily: poppins500.style,
+                          fontFmaily: poppins400.style,
                           color: COLORS.WHITE,
-                          fontWeight: "600 !important",
+                          // fontWeight: "600 !important",
                         }}
                       >
                         {val.description}

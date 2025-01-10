@@ -38,7 +38,7 @@ const SubFooter = () => {
                   color: COLORS.WHITE,
                 }}
               >
-                Newsletter for recieve
+                Subscribe for recieve
               </Typography>
               <Typography
                 sx={{

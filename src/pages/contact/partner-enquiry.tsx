@@ -75,10 +75,10 @@ const PartnerEnquiry = () => {
           </Grid2>
         </Grid2>
       </Container> */}
-      <Container sx={{ mt: 7, pb: 10 }}>
+      <Container sx={{ mt: 4, pb: 10 }}>
         <Grid2 container>
           <Grid2 size={{ lg: 5, xs: 12 }} margin="auto">
-            <Typography
+            {/* <Typography
               sx={{
                 fontSize: 20,
                 fontFamily: poppins400.style,
@@ -97,7 +97,7 @@ const PartnerEnquiry = () => {
                 margin: "auto",
                 mt: 2,
               }}
-            />
+            /> */}
 
             <Typography
               sx={{

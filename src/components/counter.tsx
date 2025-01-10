@@ -24,9 +24,20 @@ const Counter = () => {
         }}
       >
         <Container>
+          <Typography
+            sx={{ fontSize: 30, fontFamily: poppins500.style, mb: 2 }}
+          >
+           Our Success{" "}
+            <Typography
+              component={"span"}
+              sx={{ fontSize: 30, fontFamily: poppins500.style, mb: 2,color:COLORS.PRIMARY }}
+            >
+              Stories
+            </Typography>
+          </Typography>
           <Grid2 container spacing={3}>
             {data.counterData.map((val, i) => (
-              <Grid2 size={{ lg: 3, xs: 12 }}>
+              <Grid2 size={{ lg: 3, xs: 12 }} key={i}>
                 <Box
                   sx={{
                     borderTop: `4px solid ${COLORS.BLUE} !important`,

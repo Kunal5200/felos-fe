@@ -17,7 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Head>
-        <link rel="icon" href="../../public/favicon.png"></link>
+        <link rel="icon" href="/public/favicon.png"></link>
       </Head>
       {/* {!phone && <Subheader />} */}
       {phone && <MobileHeader />}

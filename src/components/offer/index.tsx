@@ -12,7 +12,7 @@ const Offer = () => {
       <Box
         sx={{
           backgroundImage: `url(${banner.src})`,
-          height: { lg: 300, xs: 200 },
+          height: { lg: 100, xs: 200 },
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -29,7 +29,6 @@ const Offer = () => {
                   color: COLORS.WHITE,
                   fontSize: 30,
                   fontFamily: poppins500.style,
-                  mt: 2,
                 }}
               >
                 Our{" "}
