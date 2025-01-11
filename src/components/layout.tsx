@@ -26,6 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
       {!phone && <Header />}
       {!phone && <UnderHeader />}
       <SpeedInsights />
+      <Analytics />
       {children}
       <SubFooter />
       <Footer2 />
