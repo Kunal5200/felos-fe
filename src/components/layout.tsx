@@ -9,6 +9,7 @@ import { useMediaQuery } from "@mui/material";
 import MobileHeader from "./mobileHeader";
 import Footer2 from "./footer2";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 interface LayoutProps {
   children: ReactNode;
 }

@@ -207,9 +207,7 @@ const MobileHeader = () => {
         </List>
       </Drawer>
 
-      <Collapse in={isOpen}>
-        <Typography>teste</Typography>
-      </Collapse>
+      
     </div>
   );
 };
