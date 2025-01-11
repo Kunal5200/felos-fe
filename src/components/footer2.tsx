@@ -50,7 +50,7 @@ const Footer2 = () => {
       router.push(path);
     }
   };
-  
+
   return (
     <Box sx={{ position: "relative" }}>
       <Box
@@ -117,8 +117,7 @@ const Footer2 = () => {
                         },
                       }}
                       key={i}
-                      onClick={()=>changePage(val.url)}
-                     
+                      onClick={() => changePage(val.url ? val.url : "")}
                     >
                       <val.icon />
                     </IconButton>
