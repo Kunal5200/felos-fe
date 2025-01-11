@@ -1,4 +1,5 @@
 import banner from "@/banner/contact-banner.jpeg";
+import About from "@/components/about";
 import Banner from "@/components/banner";
 import LoanStep from "@/components/loanSteps";
 import { COLORS } from "@/utils/colors";
@@ -15,64 +16,12 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import founder from "@/partner/founder.jpg";
 const LoanEnquiry = () => {
   return (
     <div>
       <Banner img={banner.src} heading="Loan Enquiry" />
 
-      {/* <Container sx={{ pt: 10, pb: 10 }}>
-        <Grid2 container spacing={5}>
-          <Grid2 size={{ lg: 12, xs: 12 }}>
-            <ContactCard
-              img={london.src}
-              location="Haryana, India"
-              officeType="Head Office"
-              data={data.londonData}
-              height={550}
-            />
-          </Grid2>
-          <Grid2 size={{ lg: 6, xs: 12 }}>
-            <Grid2 container spacing={5}>
-              <Grid2 size={6}>
-                <ContactCard
-                  img={tokyo1.src}
-                  location="Tokyo, Japan"
-                  officeType="Asia branch"
-                  height={250}
-                  data={data.londonData}
-                />
-              </Grid2>
-              <Grid2 size={6}>
-                <ContactCard
-                  img={tokyo1.src}
-                  location="Tokyo, Japan"
-                  officeType="Asia branch"
-                  height={250}
-                  data={data.londonData}
-                />
-              </Grid2>
-              <Grid2 size={6}>
-                <ContactCard
-                  img={tokyo1.src}
-                  location="Tokyo, Japan"
-                  officeType="Asia branch"
-                  height={250}
-                  data={data.londonData}
-                />
-              </Grid2>
-              <Grid2 size={6}>
-                <ContactCard
-                  img={tokyo1.src}
-                  location="Tokyo, Japan"
-                  officeType="Asia branch"
-                  height={250}
-                  data={data.londonData}
-                />
-              </Grid2>
-            </Grid2>
-          </Grid2>
-        </Grid2>
-      </Container> */}
       <Box sx={{ pt: 10 }}></Box>
 
       <Container sx={{ mt: 7, pb: 10 }}>
@@ -80,27 +29,6 @@ const LoanEnquiry = () => {
           <Grid2 size={{ lg: 6, xs: 12 }}>
             <Grid2 container>
               <Grid2 size={{ lg: 12, xs: 12 }} margin="auto">
-                {/* <Typography
-                  sx={{
-                    fontSize: 20,
-                    fontFamily: poppins400.style,
-                    textAlign: "center",
-                    letterSpacing: 4,
-                    color: COLORS.SECONDARY,
-                  }}
-                >
-                  Contact Us
-                </Typography>
-                <Divider
-                  sx={{
-                    borderColor: COLORS.PRIMARY,
-                    width: 40,
-                    borderWidth: 1,
-                    margin: "auto",
-                    mt: 2,
-                  }}
-                /> */}
-
                 <Typography
                   sx={{
                     fontSize: 30,
@@ -232,6 +160,19 @@ const LoanEnquiry = () => {
             <LoanStep />
           </Grid2>
         </Grid2>
+
+        <Box sx={{ pt: 5, pb: 5 }}>
+          {" "}
+          <About
+            heading1="Our Founder"
+            coloredHeading=""
+            heading2=""
+            description="Prefinn is founded by Mr. Rajesh Upadhyay, an IIM-C alumnus and seasoned Banker with over 20yrs of experience in finance and fintech business management. Throughout his BFSI career Mr. Upadhyay has held key business roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank and ICICI Bank. "
+            listDescription="With extensive expertise in Digital Lending, Fintech Business, Financial Inclusion Program and RBI Compliances, Mr. Upadhyay has played a pivotal role in driving Business growth and Innovation. His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success."
+            fontWeight="400"
+            img={founder}
+          />
+        </Box>
       </Container>
     </div>
   );

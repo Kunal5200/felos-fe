@@ -38,7 +38,11 @@ const About = ({
   return (
     <div>
       <Container maxWidth="lg">
-        <Grid2 container spacing={10} alignItems={"start"}>
+        <Grid2
+          container
+          spacing={10}
+          alignItems={fontWeight ? "start" : "center"}
+        >
           <Grid2 size={{ lg: 6, xs: 12 }} data-aos="fade-right">
             <Typography
               sx={{
@@ -104,86 +108,23 @@ const About = ({
                 </ListItem>
               ))}
             </List>
-            {/* {!fontWeight && (
-              <Typography
-                sx={{
-                  mt: 2,
-                  fontSize: 14,
-                  color: COLORS.BLACK,
-                  // fontWeight: "500 !important",
-                  fontFamily: poppins400.style,
-                }}
-              >
-                {description2}
-              </Typography>
-            )} */}
           </Grid2>
           <Grid2 size={{ lg: 6, xs: 11 }} sx={{ textAlign: "center" }}>
-            {/* <Card sx={{ width: "100%", margin: "auto", p: 2 }}>
-              <Typography
-                sx={{
-                  fontSize: 14,
-                  fontFamily: poppins500.style,
-                  color: COLORS.GREY,
-                }}
-              >
-                You think water moves fast? You should see ice gun from alaska.
-              </Typography>
-
-              <TextField
-                label="Full Name"
-                variant="standard"
-                sx={{ ...textField, mb: 2, mt: 2 }}
-                fullWidth
-              />
-              <TextField
-                label="Email Address"
-                variant="standard"
-                sx={{ ...textField, mb: 2 }}
-                fullWidth
-              />
-              <TextField
-                label="Phone Number"
-                variant="standard"
-                sx={{ ...textField, mb: 2 }}
-                fullWidth
-              />
-              <TextareaAutosize
-                placeholder="Message"
-                className="textArea"
-                minRows={5}
-              />
-              <Box sx={{ textAlign: "center", mt: 2 }}>
-                <Button
-                  sx={{
-                    fontSize: 13,
-                    backgroundColor: COLORS.BLUE,
-                    color: COLORS.WHITE,
-                    fontFamily: poppins500.style,
-                    width: 150,
-                    borderRadius: 4,
-                  }}
-                >
-                  Send Now
-                </Button>
-              </Box>
-            </Card> */}
-            <Image src={img} alt="" width={phone ? 350 : 400} />
+            <Image src={img} alt="" width={phone ? 350 : 300} />
           </Grid2>
         </Grid2>
-        {/* {fontWeight && ( */}
-          <Typography
-            sx={{
-              mt: 2,
-              fontSize: 14,
-              color: COLORS.BLACK,
-              // fontWeight: "500 !important",
-              fontFamily: poppins400.style,
-            }}
-          >
-            {description2}
-          </Typography>
-        {/* )} */}
+
+        <Typography
+          sx={{
+            mt: 2,
+            fontSize: 14,
+            color: COLORS.BLACK,
+
+            fontFamily: poppins400.style,
+          }}
+        >
+          {description2}
+        </Typography>
       </Container>
     </div>
   );

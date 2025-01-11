@@ -80,10 +80,15 @@ const Company = () => {
   ];
   return (
     <div>
-      <Banner img={aboutBanner.src} heading="About Prefinn" />
+      <Banner img={aboutBanner.src} heading="About Us" />
 
       <Box sx={{ pt: 5 }}>
         <Container>
+          <Typography
+            sx={{ mt: 1, fontSize: 25, fontFamily: poppins600.style }}
+          >
+            About Prefinn
+          </Typography>
           <Typography
             sx={{ mt: 1, fontSize: 15, fontFamily: poppins500.style }}
           >
@@ -100,10 +105,6 @@ const Company = () => {
           heading2=""
           description="Prefinn is founded by Mr. Rajesh Upadhyay, an IIM-C alumnus and seasoned Banker with over 20yrs of experience in finance and fintech business management. Throughout his BFSI career Mr. Upadhyay has held key business roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank and ICICI Bank. "
           listDescription="With extensive expertise in Digital Lending, Fintech Business, Financial Inclusion Program and RBI Compliances, Mr. Upadhyay has played a pivotal role in driving Business growth and Innovation. His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success."
-          // list={data.list2}
-          //           description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
-          // His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success.
-          // "
           fontWeight="400"
           img={founder}
         />

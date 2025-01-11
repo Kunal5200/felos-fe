@@ -64,7 +64,7 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
         onMouseLeave={() => setHovered(false)}
         onClick={onClick}
       >
-        <Stack spacing={2} sx={{ zIndex: 1 }} >
+        <Stack spacing={2} sx={{ zIndex: 1 }}>
           <Typography
             sx={{
               textTransform: "capitalize",
@@ -107,7 +107,7 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
             }}
             onClick={onClick}
           >
-            Know More
+            Learn More
           </Button>
         </Stack>
       </Card>

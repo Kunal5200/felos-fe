@@ -77,7 +77,7 @@ export const data = {
       url: "/",
     },
     {
-      label: "About Company",
+      label: "About Us",
       url: "/about",
     },
     // {

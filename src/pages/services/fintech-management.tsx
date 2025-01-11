@@ -21,7 +21,7 @@ const FintechManagement = () => {
               <ServicesCard
                 heading={val.heading}
                 description={val.description}
-                onClick={() => changePage("/contact/loan-enquiry")}
+                onClick={() => changePage("/contact/partner-enquiry")}
               />
             </Grid2>
           ))}
