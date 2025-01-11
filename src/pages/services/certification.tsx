@@ -18,7 +18,7 @@ const Certification = () => {
       <Container sx={{ pt: 10, pb: 10 }}>
         <Grid2 container spacing={4}>
           {RBITraining.map((val, i) => (
-            <Grid2 size={4} key={i}>
+            <Grid2 size={{lg:4,xs:12}} key={i}>
               <ServicesCard
                 heading={val.heading}
                 description={val.description}

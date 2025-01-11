@@ -107,7 +107,7 @@ const ServicesCard = ({ heading, description, onClick }: SERVICEDATA) => {
             }}
             onClick={onClick}
           >
-            Read More
+            Know More
           </Button>
         </Stack>
       </Card>

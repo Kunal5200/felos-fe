@@ -283,7 +283,7 @@ export const data = {
         },
         {
           label: "Join Our team",
-          url: "/contact/partner-enquiry",
+          url: "https://forms.gle/1aH21nC5w32hnz1N8",
         },
         {
           label: "Terms & Conditions",

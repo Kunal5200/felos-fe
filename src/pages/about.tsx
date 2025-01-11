@@ -26,16 +26,26 @@ import { ArrowForward } from "@mui/icons-material";
 const Company = () => {
   const list1 = [
     {
-      label: "Finance Management",
+      label: "Digital Lending Products",
     },
     {
-      label: "Digital Lending",
+      label: "Creating Loan Distribution Network",
     },
     {
-      label: "Distribution Channel Setup",
+      label: "Merchant Acquisition for PG Solutions",
     },
     {
-      label: "Financial Inclusion and Compliance",
+      label: "New Bank/NBFCs Partnerships",
+    },
+    {
+      label: "Developing BC/BF (Business Correspondent) Models",
+    },
+    {
+      label: "Ensuring Business with Compliance ",
+    },
+    {
+      label:
+        "Facilitating IIBF/DRA Training & Certifications for BC and MFI Agents",
     },
   ];
   const list2 = [
@@ -60,12 +70,12 @@ const Company = () => {
     {
       heading: "Our Vision",
       description:
-        "At Prefinn, we aim to be the go-to consultants for fintech companies and the trusted financial partner for businesses and consumers. We achieve this through our expertise in the BFSI sector, our wide network, and our commitment to delivering innovative solutions and exceptional client support.",
+        "At Prefinn, we aim to be the trusted financial partner for Businesses and Consumers and go-to consultants for fintech companies. We achieve this through our expertise in the BFSI sector, our wide distribution network and our commitment to offer digital lending solutions and exceptional client service.",
     },
     {
       heading: "Our Approach",
       description:
-        "At Prefinn, we focus on supporting institutions by leveraging our experience with BC partners and fostering collaborations to drive financial inclusion. We provide data-driven insights to guide regulatory and business decisions, offering fully customizable solutions tailored to each client's unique needs.",
+        "At Prefinn, we focus on supporting institutions by leveraging our experience with financial sector and fostering collaborations to drive financial inclusion through distribution network. We work on large Bank network and data-driven insights for business decisions, offering customizable solutions tailored to each client's unique needs",
     },
   ];
   return (
@@ -79,8 +89,7 @@ const Company = () => {
           >
             Prefinn is a Finance & Fintech Solution firm ventured by experienced
             Banking professionals having significant expertise in the areas of
-            Banking, Digital Lending, Financial Inclusion & Fintech Product &
-            Services.
+            Digital Lending, Financial Inclusion, Fintech Products & Services.
           </Typography>
         </Container>
       </Box>
@@ -89,45 +98,24 @@ const Company = () => {
           heading1="Our Founder"
           coloredHeading=""
           heading2=""
-          description="Prefinn will serve as Preferred Finance Partner for all segment of Retail and Institutional Customers. Its Loan Distribution Platform has been created with a vision to offer multiple Loan Products to B2C Customers from any Bank or NBFCs as per their Choice. Prefinn Large Network of IBOs (Independent Business Owners) will assist Customers to find out Suitable Loan product & Bank Partners which will bridge the gap of tailored finance options across the Country. "
-          listDescription="Throughout his career in the BFSI sector, Mr. Upadhyay has held key roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank, and ICICI Bank. He has excelled in various domains such as:"
-          list={data.list2}
-          description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
-His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success.
-"
+          description="Prefinn is founded by Mr. Rajesh Upadhyay, an IIM-C alumnus and seasoned Banker with over 20yrs of experience in finance and fintech business management. Throughout his BFSI career Mr. Upadhyay has held key business roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank and ICICI Bank. "
+          listDescription="With extensive expertise in Digital Lending, Fintech Business, Financial Inclusion Program and RBI Compliances, Mr. Upadhyay has played a pivotal role in driving Business growth and Innovation. His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success."
+          // list={data.list2}
+          //           description2="With expertise in business development, P&L management, program execution, and RBI compliance, Mr. Upadhyay has played a pivotal role in driving growth and innovation.
+          // His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success.
+          // "
           fontWeight="400"
           img={founder}
         />
       </Box>
       <Container sx={{ pb: 5 }}>
         <Grid2 container spacing={6}>
-          {approach.map((val, i) => (
-            <Grid2 size={{ lg: 6, xs: 12 }} key={i}>
-              <Card
-                sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
-              >
-                <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
-                  {val.heading}
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: 14,
-                    fontFamily: poppins400.style,
-                    color: COLORS.BLACK,
-                    mt: 2,
-                  }}
-                >
-                  {val.description}
-                </Typography>
-              </Card>
-            </Grid2>
-          ))}
           <Grid2 size={12}>
             <Card
               sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
             >
               <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
-                Our  Team
+                Our Team
               </Typography>
               <Typography
                 sx={{
@@ -137,9 +125,21 @@ His strategic vision and solutions empower fintech companies and financial insti
                   mt: 2,
                 }}
               >
-                The Prefinn team is a group of highly skilled professionals with
-                extensive experience in banking and fintech. Our expertise spans
-                key areas, including:
+                The Prefinn team is a group of highly skilled finance
+                professionals with extensive experience in Banking and Fintech
+                Business.
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: 14,
+                  fontFamily: poppins400.style,
+                  color: COLORS.BLACK,
+                  mt: 2,
+                }}
+              >
+                Prefinn Team is committed to delivering top-notch services and
+                products to its clients and Partners. We partner with & fintech
+                companies to guide on:
               </Typography>
               <List>
                 {list1.map((val, i) => (
@@ -164,7 +164,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                   </ListItem>
                 ))}
               </List>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: 14,
                   fontFamily: poppins400.style,
@@ -172,9 +172,9 @@ His strategic vision and solutions empower fintech companies and financial insti
                   mt: 2,
                 }}
               >
-                Under the leadership of Mr. Rajesh Upadhyay, we are committed to
-                delivering top-notch consulting services. We partner with
-                fintech companies to guide on:
+                Our goal is to help our Partners and Clients achieve their
+                business objectives while driving Digital Lending Products and
+                fostering sustainable channel growth.
               </Typography>
               <List>
                 {list2.map((val, i) => (
@@ -198,7 +198,7 @@ His strategic vision and solutions empower fintech companies and financial insti
                     />
                   </ListItem>
                 ))}
-              </List>
+              </List> */}
 
               <Typography
                 sx={{
@@ -208,13 +208,43 @@ His strategic vision and solutions empower fintech companies and financial insti
                   mt: 2,
                 }}
               >
-                Our goal is to help fintechs achieve their business objectives
-                while driving agent profitability and fostering sustainable
-                channel growth. Let’s Prefinn be your trusted partner in
-                achieving success!
+                Our goal is to help our Partners and Clients achieve their
+                business objectives while driving Digital Lending Products and
+                fostering sustainable channel growth.
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: 14,
+                  fontFamily: poppins600.style,
+                  color: COLORS.BLACK,
+                  mt: 2,
+                }}
+              >
+                Let’s Prefinn be your trusted partner in achieving success!
               </Typography>
             </Card>
           </Grid2>
+          {approach.map((val, i) => (
+            <Grid2 size={{ lg: 6, xs: 12 }} key={i}>
+              <Card
+                sx={{ p: 2, boxShadow: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px" }}
+              >
+                <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
+                  {val.heading}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: 14,
+                    fontFamily: poppins400.style,
+                    color: COLORS.BLACK,
+                    mt: 2,
+                  }}
+                >
+                  {val.description}
+                </Typography>
+              </Card>
+            </Grid2>
+          ))}
         </Grid2>
       </Container>
 

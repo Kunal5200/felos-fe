@@ -42,8 +42,13 @@ const Footer2 = () => {
 
   const router = useRouter();
 
-  const changePage = (path: string ) => {
-    router.push(path);
+  const changePage = (path: string) => {
+    if (/^https?:\/\//.test(path)) {
+    //  alert(path)
+      window.open(path, "_blank");
+    } else {
+      router.push(path);
+    }
   };
   return (
     <Box sx={{ position: "relative" }}>
@@ -54,7 +59,7 @@ const Footer2 = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor:COLORS.WHITE ,
+          backgroundColor: COLORS.WHITE,
         }}
       >
         <Box

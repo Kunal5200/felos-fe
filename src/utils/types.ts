@@ -88,7 +88,7 @@ export interface ABOUTDESCRIPTION {
   heading2: string;
   description: string;
   list?: LIST[];
-  description2: string;
+  description2?: string;
   listDescription?: string;
   img: StaticImageData;
   fontWeight?: string;
