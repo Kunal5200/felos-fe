@@ -117,16 +117,26 @@ const PartnerEnquiry = () => {
           </Grid2>
         </Grid2>
 
-        <Box sx={{ pt: 8, pb: 5 }}>
-          <About
-            heading1="Our Founder"
-            coloredHeading=""
-            heading2=""
-            description="Prefinn is founded by Mr. Rajesh Upadhyay, an IIM-C alumnus and seasoned Banker with over 20yrs of experience in finance and fintech business management. Throughout his BFSI career Mr. Upadhyay has held key business roles in leading organizations, including Axis Bank, Manipal Tech, Kotak Bank, HDFC Bank and ICICI Bank. "
-            listDescription="With extensive expertise in Digital Lending, Fintech Business, Financial Inclusion Program and RBI Compliances, Mr. Upadhyay has played a pivotal role in driving Business growth and Innovation. His strategic vision and solutions empower fintech companies and financial institutions to achieve sustainable financial success."
-            fontWeight="400"
-            img={founder}
-          />
+        <Box sx={{ pt: 5, pb: 5 }}>
+          <Container>
+            <Typography sx={{ fontSize: 25, fontFamily: poppins600.style }}>
+              {" "}
+              Founder’s Message
+            </Typography>
+            <Typography
+              sx={{ fontSize: 15, fontFamily: poppins400.style, mt: 3 }}
+            >
+              {" "}
+              Prefinn will serve as Preferred Finance Partner for all segments
+              of Retail and Institutional Customers. Its Loan Distribution
+              Platform has been created with a vision to offer multiple Loan
+              Products to B2C Customers from any Bank or NBFCs as per their
+              Choice. Prefinn Large Network of IBOs (Independent Business
+              Owners) will assist Customers to find out Suitable Loan product &
+              Bank Partners which will bridge the gap of tailored finance
+              options across the Country.
+            </Typography>
+          </Container>
         </Box>
         <Box sx={{ pt: 8, pb: 5 }}>
           <Faqs data={data.faqData} />
