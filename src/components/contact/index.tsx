@@ -11,7 +11,7 @@ const ContactSection = () => {
       <Box
         sx={{
           backgroundImage: `url(${banner.src})`,
-          height: { lg: "100vh", xs: "130vh" },
+          height: { lg: "100%", xs: "130vh" },
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
