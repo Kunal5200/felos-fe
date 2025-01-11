@@ -69,6 +69,7 @@ export const data = {
     },
     {
       icon: FaLinkedinIn,
+      url: "https://www.linkedin.com/company/prefinn/",
     },
   ],
   headerLinks: [
@@ -93,11 +94,11 @@ export const data = {
       url: "/services",
       icon: true,
     },
-    {
-      label: "Contact Us",
-      url: "/contact",
-      icon: true,
-    },
+    // {
+    //   label: "Contact Us",
+    //   url: "/contact",
+    //   icon: true,
+    // },
   ],
   offerData: [
     {

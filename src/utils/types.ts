@@ -125,3 +125,12 @@ export interface FAQPROPS {
 export interface FAQDATA {
   data: FAQPROPS[];
 }
+
+export interface LOANPRODUCTS {
+  label: string;
+}
+
+export interface MODALPROPS {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}

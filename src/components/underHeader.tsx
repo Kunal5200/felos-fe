@@ -87,7 +87,12 @@ const UnderHeader = () => {
             alignItems={"center"}
             justifyContent={"space-between"}
           >
-            <Stack direction={"row"} alignItems={"center"} spacing={4} sx={{mx:3}}>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              spacing={4}
+              sx={{ mx: 3 }}
+            >
               {data.headerLinks.map((val, i) =>
                 val.icon ? (
                   <Typography
@@ -130,9 +135,33 @@ const UnderHeader = () => {
               )}
             </Stack>
             <Stack direction={"row"} alignItems={"center"} spacing={4}>
-              <IconButton>
+              {/* <IconButton>
                 <Person sx={{ color: COLORS.WHITE }} />
-              </IconButton>
+              </IconButton> */}
+              <Typography
+                sx={{
+                  fontSize: 14,
+                  fontFamily: poppins500.style,
+                  color: COLORS.WHITE,
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                }}
+                onClick={() => changePath("/partner-enquiry")}
+              >
+                Become a Partner
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: 14,
+                  fontFamily: poppins500.style,
+                  color: COLORS.WHITE,
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                }}
+                onClick={() => changePath("/loan-enquiry")}
+              >
+                Apply for Loan
+              </Typography>
             </Stack>
           </Stack>
         </Container>

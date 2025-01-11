@@ -44,12 +44,13 @@ const Footer2 = () => {
 
   const changePage = (path: string) => {
     if (/^https?:\/\//.test(path)) {
-    //  alert(path)
+      //  alert(path)
       window.open(path, "_blank");
     } else {
       router.push(path);
     }
   };
+  
   return (
     <Box sx={{ position: "relative" }}>
       <Box
@@ -116,6 +117,8 @@ const Footer2 = () => {
                         },
                       }}
                       key={i}
+                      onClick={()=>changePage(val.url)}
+                     
                     >
                       <val.icon />
                     </IconButton>

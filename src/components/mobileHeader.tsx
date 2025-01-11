@@ -107,21 +107,6 @@ const MobileHeader = () => {
         <List sx={{ mt: 5 }}>
           {data.headerLinks.map((val, i) =>
             val.icon ? (
-              // <ListItemButton key={i} onClick={(e) => openMenu(i, e)}>
-              //   <ListItemText
-              //     primary={
-              //       <Typography
-              //         sx={{
-              //           textAlign: "center",
-              //           fontSize: 25,
-              //           textTransform: "uppercase",
-              //         }}
-              //       >
-              //         {val.label} {isOpen}
-              //       </Typography>
-              //     }
-              //   />
-              // </ListItemButton>
               <Accordion
                 sx={{
                   boxShadow: "none !important",
@@ -129,7 +114,6 @@ const MobileHeader = () => {
                     backgroundColor: "transparent",
                   },
                 }}
-                // expanded={expanded }
                 onChange={handleChange(`panel${i}`)}
                 expanded={expanded === `panel${i}`}
               >
@@ -168,23 +152,58 @@ const MobileHeader = () => {
                 </AccordionDetails>
               </Accordion>
             ) : (
-              <ListItemButton key={i} onClick={() => changePath(val.url)}>
-                <ListItemText
-                  primary={
-                    <Typography
-                      sx={{
-                        textAlign: "start",
-                        fontSize: 25,
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      {val.label}
-                    </Typography>
-                  }
-                />
-              </ListItemButton>
+              <>
+                <ListItemButton key={i} onClick={() => changePath(val.url)}>
+                  <ListItemText
+                    primary={
+                      <Typography
+                        sx={{
+                          textAlign: "start",
+                          fontSize: 25,
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {val.label}
+                      </Typography>
+                    }
+                  />
+                </ListItemButton>
+              </>
             )
           )}
+        </List>
+        <List>
+
+        <ListItemButton onClick={() => changePath("/partner-enquiry")}>
+          <ListItemText
+            primary={
+              <Typography
+                sx={{
+                  textAlign: "start",
+                  fontSize: 25,
+                  textTransform: "uppercase",
+                }}
+              >
+                Become a Partner
+              </Typography>
+            }
+          />
+        </ListItemButton>
+        <ListItemButton onClick={() => changePath("/loan-enquiry")}>
+          <ListItemText
+            primary={
+              <Typography
+                sx={{
+                  textAlign: "start",
+                  fontSize: 25,
+                  textTransform: "uppercase",
+                }}
+              >
+                Apply for a Loan
+              </Typography>
+            }
+          />
+        </ListItemButton>
         </List>
       </Drawer>
 
