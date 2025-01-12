@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TestimonialCard from "./testimonialCard";
 import { COLORS } from "@/utils/colors";
@@ -59,6 +59,10 @@ const Testimonials = () => {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
+            }}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
             }}
           >
             {TestimonialData.map((val, i) => (
