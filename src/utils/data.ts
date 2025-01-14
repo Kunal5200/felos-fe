@@ -294,11 +294,11 @@ export const data = {
         },
         {
           label: "Apply for a Loan",
-          url: "/contact/loan-enquiry",
+          url: "/loan-enquiry",
         },
         {
           label: "Become a Partner",
-          url: "/contact/partner-enquiry",
+          url: "/partner-enquiry",
         },
       ],
     },
