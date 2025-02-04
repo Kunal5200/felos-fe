@@ -76,22 +76,11 @@ const Collapsable = ({ data }: ACCORDIONPROPS) => {
             >
               {val.listHeading}
             </Typography>
-            <List>
-              {val.list.map((item, index) => (
-                <ListItem disablePadding>
-                  <ListItemAvatar sx={{ minWidth: 25 }}>
-                    <Typography
-                      sx={{
-                        fontSize: 14,
-                        fontFamily: poppins400.style,
-                        color: COLORS.GREY,
-                      }}
-                    >
-                      {index + 1}.
-                    </Typography>
-                  </ListItemAvatar>
-                  <ListItemText
-                    primary={
+            {val.list && (
+              <List>
+                {val.list.map((item, index) => (
+                  <ListItem disablePadding>
+                    <ListItemAvatar sx={{ minWidth: 25 }}>
                       <Typography
                         sx={{
                           fontSize: 14,
@@ -99,13 +88,26 @@ const Collapsable = ({ data }: ACCORDIONPROPS) => {
                           color: COLORS.GREY,
                         }}
                       >
-                        {item.label}
+                        {index + 1}.
                       </Typography>
-                    }
-                  />
-                </ListItem>
-              ))}
-            </List>
+                    </ListItemAvatar>
+                    <ListItemText
+                      primary={
+                        <Typography
+                          sx={{
+                            fontSize: 14,
+                            fontFamily: poppins400.style,
+                            color: COLORS.GREY,
+                          }}
+                        >
+                          {item.label}
+                        </Typography>
+                      }
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            )}
           </AccordionDetails>
         </Accordion>
       ))}

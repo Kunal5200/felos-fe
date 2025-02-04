@@ -35,7 +35,7 @@ export interface OFFERDATA {
 export interface ACCORDION_DATA {
   label: string;
   value: string;
-  list: LIST[];
+  list?: LIST[];
   listHeading?: string;
   description?: string;
 }

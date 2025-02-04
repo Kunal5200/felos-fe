@@ -159,20 +159,20 @@ export const data = {
       value:
         "We offers multiple Loan Products to Individuals and Corporate customers through our large network of Independent Business Owners (IBOs) & 130+ Partner Banks and NBFCs.",
       lisHeading: "Our Distribution Partners:",
-      list: [
-        {
-          label: "Independent Financial Advisors",
-        },
-        {
-          label: "Insurance Product Advisors",
-        },
-        {
-          label: "Real Estate Consultants",
-        },
-        {
-          label: "Independent Tax Consultants",
-        },
-      ],
+      // list: [
+      //   {
+      //     label: "Independent Financial Advisors",
+      //   },
+      //   {
+      //     label: "Insurance Product Advisors",
+      //   },
+      //   {
+      //     label: "Real Estate Consultants",
+      //   },
+      //   {
+      //     label: "Independent Tax Consultants",
+      //   },
+      // ],
     },
     {
       label: "Our Loan Products",
